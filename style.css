@@ -97,11 +97,11 @@ header nav ul li a {
 
 /* Tablet Portrait to Screen */
 @media only screen and (min-width: 768px) and (max-width: 1053px) {
-  /* line 10, _media-queries.sass */
+  /* line 11, _media-queries.sass */
   body #brand-text {
     margin: 4% 0 0 8%;
   }
-  /* line 12, _media-queries.sass */
+  /* line 13, _media-queries.sass */
   body #brand-text .site-title {
     font-size: 2.5em !important;
     line-height: 1em;
@@ -109,45 +109,57 @@ header nav ul li a {
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 19, _media-queries.sass */
+  /* line 21, _media-queries.sass */
   body #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 21, _media-queries.sass */
+  /* line 23, _media-queries.sass */
   body #brand-text {
     margin: 3% 0 0 5%;
     text-align: center;
   }
-  /* line 24, _media-queries.sass */
+  /* line 26, _media-queries.sass */
   body #brand-text .site-title {
     font-size: 2em !important;
     line-height: 1em;
   }
-  /* line 27, _media-queries.sass */
+  /* line 30, _media-queries.sass */
   body .main-navigation {
     visibility: hidden;
+  }
+  /* line 32, _media-queries.sass */
+  body .mobile-navigation {
+    display: inline;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  /* line 33, _media-queries.sass */
+  /* line 40, _media-queries.sass */
   body #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 35, _media-queries.sass */
+  /* line 42, _media-queries.sass */
   body #brand-text {
     margin: 5% 5% 0 5%;
     text-align: center;
   }
-  /* line 38, _media-queries.sass */
+  /* line 45, _media-queries.sass */
   body #brand-text .site-title {
     font-size: 1em !important;
     line-height: 0.5em;
+  }
+  /* line 49, _media-queries.sass */
+  body .main-navigation {
+    visibility: hidden;
+  }
+  /* line 51, _media-queries.sass */
+  body .mobile-navigation {
+    display: inline;
   }
 }
