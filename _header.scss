@@ -1,0 +1,42 @@
+header {
+	background-color: #464646;
+	color: $header-text;
+		#logo {
+			background: url("BmoreUnsceneLogo.png") no-repeat 0;
+			min-height: 102px;
+			width: 102px;
+			display: block;
+			margin: 0 10px 0 10px;
+			}
+		#brand-text {
+			margin: 3% 0 0 5%;
+			h1 {
+				color: $header-text;
+				font-size: 2em;
+				letter-spacing: 0.125em;
+				font-weight: 100;
+				line-height: 1em;
+			}
+			.site-description {
+				font: $caption;
+				color: $header-text;
+			}
+		}
+	nav {
+	font-family: $body-copy;
+		ul {
+			li {
+				border-right: 0.5px solid white;
+				padding: 0px 8px 0px 8px;
+				margin: 2px 0px;
+				a { 
+					color: $header-text;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+
+
