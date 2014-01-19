@@ -63,9 +63,11 @@
 					</div>
 			</div>
 			<div class="span6">
-				<nav role="navigation" class="site-navigation main-navigation">
+				<nav role="navigation" class="site-navigation main-navigation pull-right">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
 				</nav><!-- .site-navigation .main-navigation -->
+				<nav role="mobile" class="site-navigation mobile-navigation">
+				</nav>
 			</div>
 		<div class="clear"></div>
 	</div><!--/container -->
