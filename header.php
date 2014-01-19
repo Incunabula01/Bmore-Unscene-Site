@@ -44,24 +44,26 @@
 >
 
 <header id="masthead" class="site-header" role="banner">
-	<div class="container">
-			<div class="six.columns">
-						<div id="brand" class="three.columns">
+	<div class="row-fluid">
+			<div class="span6">
+					<div class="row-fluid">
+						<div id="brand" class="span3">
 							<a href="<?php echo esc_url( home_url( '/' ) );?>">
 								<div id="logo"></div>
 							</a>
 						</div><!-- /brand -->
-						<div id="brand-text" class="four.columns">
+						<div id="brand-text" class="span4">
 							<h1 class="site-title">
 								<?php echo esc_attr( get_bloginfo( 'name', 'display' ) );?>
 							</h1>
 							<h4 class="site-description">
 								<?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
 							</h4>
+						</div>
 					</div>
 			</div>
-			<div class="six.columns">
-				<nav role="navigation" class="site-navigation main-navigation ">
+			<div class="span6">
+				<nav role="navigation" class="site-navigation main-navigation pull-right">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
 				</nav><!-- .site-navigation .main-navigation -->
 				<nav role="mobile" class="site-navigation mobile-navigation">
@@ -72,4 +74,4 @@
 		
 </header><!-- #masthead .site-header -->
 
-<div class="container"><!-- start the page containter -->
+<div class="main-fluid"><!-- start the page containter -->
