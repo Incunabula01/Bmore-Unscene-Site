@@ -60,106 +60,109 @@ header #logo {
   min-height: 102px;
   width: 102px;
   display: block;
-  margin: 0 10px 0 10px;
 }
-/* line 10, _header.sass */
+/* line 9, _header.sass */
 header #brand-text {
-  margin: 3% 0 0 5%;
+  margin: 8% 0 0 2%;
 }
-/* line 12, _header.sass */
+/* line 11, _header.sass */
 header #brand-text h1 {
   color: #eeeeee;
-  font-size: 2em;
+  font-size: 200%;
   letter-spacing: 0.125em;
   font-weight: 100;
   line-height: 1em;
 }
-/* line 18, _header.sass */
+/* line 17, _header.sass */
 header #brand-text .site-description {
   font: BorgiaPro-Italic, serif;
   color: #eeeeee;
 }
-/* line 21, _header.sass */
+/* line 20, _header.sass */
 header nav {
   font-family: BorgiaPro-Regular, serif;
 }
-/* line 24, _header.sass */
+/* line 23, _header.sass */
 header nav ul li {
   border-right: 0.5px solid white;
   padding: 0px 8px 0px 8px;
   margin: 2px 0px;
 }
-/* line 28, _header.sass */
+/* line 27, _header.sass */
 header nav ul li a {
   color: #eeeeee;
   font-size: 18px;
 }
 
 /* Tablet Portrait to Screen */
-@media only screen and (min-width: 768px) and (max-width: 1053px) {
-  /* line 11, _media-queries.sass */
-  body #brand-text {
-    margin: 4% 0 0 8%;
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 12, _media-queries.sass */
+  body header #brand-text {
+    margin: 5% 0 0 5%;
   }
-  /* line 13, _media-queries.sass */
-  body #brand-text .site-title {
-    font-size: 2.5em !important;
+  /* line 14, _media-queries.sass */
+  body header #brand-text .site-title {
+    font-size: 180% !important;
     line-height: 1em;
+  }
+  /* line 21, _media-queries.sass */
+  body header nav ul li a {
+    font-size: 90%;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 21, _media-queries.sass */
-  body #logo {
+  /* line 29, _media-queries.sass */
+  body header #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 23, _media-queries.sass */
-  body #brand-text {
-    margin: 3% 0 0 5%;
+  /* line 31, _media-queries.sass */
+  body header #brand-text {
+    margin: 0px;
     text-align: center;
   }
-  /* line 26, _media-queries.sass */
-  body #brand-text .site-title {
-    font-size: 2em !important;
-    line-height: 1em;
+  /* line 34, _media-queries.sass */
+  body header #brand-text .site-title {
+    font-size: 150% !important;
+    line-height: 0.5em;
   }
-  /* line 30, _media-queries.sass */
-  body .main-navigation {
+  /* line 38, _media-queries.sass */
+  body header .main-navigation {
     visibility: hidden;
   }
-  /* line 32, _media-queries.sass */
-  body .mobile-navigation {
+  /* line 40, _media-queries.sass */
+  body header .mobile-navigation {
     display: inline;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  /* line 40, _media-queries.sass */
-  body #logo {
+  /* line 49, _media-queries.sass */
+  body header #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 42, _media-queries.sass */
-  body #brand-text {
-    margin: 5% 5% 0 5%;
+  /* line 51, _media-queries.sass */
+  body header #brand-text {
+    margin: 0px;
     text-align: center;
   }
-  /* line 45, _media-queries.sass */
-  body #brand-text .site-title {
-    font-size: 1em !important;
+  /* line 54, _media-queries.sass */
+  body header #brand-text .site-title {
+    font-size: 125% !important;
     line-height: 0.5em;
   }
-  /* line 49, _media-queries.sass */
-  body .main-navigation {
+  /* line 58, _media-queries.sass */
+  body header .main-navigation {
     visibility: hidden;
   }
-  /* line 51, _media-queries.sass */
-  body .mobile-navigation {
+  /* line 60, _media-queries.sass */
+  body header .mobile-navigation {
     display: inline;
   }
 }
