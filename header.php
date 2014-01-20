@@ -61,7 +61,7 @@
 						</div>
 			</div>
 			<div class="seven columns omega">
-					<nav role="navigation" class="site-navigation main-navigation ">
+					<nav role="navigation" class="site-navigation main-navigation mobile-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
 					</nav><!-- .site-navigation .main-navigation -->
 			</div>
