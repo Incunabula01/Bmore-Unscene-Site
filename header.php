@@ -44,7 +44,8 @@
 >
 
 <header id="masthead" class="site-header" role="banner">
-	<div class="container">
+	<div class="container wrapper">
+		<div class="inner-wrapper">
 			<div class="nine columns alpha">
 						<div id="brand" class="two columns alpha">
 							<a href="<?php echo esc_url( home_url( '/' ) );?>">
@@ -60,12 +61,13 @@
 							</h4>
 						</div>
 			</div>
-			<div class="seven columns omega">
-					<nav role="navigation" class="site-navigation main-navigation mobile-navigation">
+			<div class="seven columns omega nav-bg">
+					<nav role="navigation" class="site-navigation main-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
 					</nav><!-- .site-navigation .main-navigation -->
 			</div>
-		<div class="clear"></div>
+			<div class="clear"></div>
+		</div>
 	</div><!--/container -->
 		
 </header><!-- #masthead .site-header -->
