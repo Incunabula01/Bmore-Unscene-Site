@@ -1,0 +1,13 @@
+2014-02-08 17:48:55    create ..naked-wordpress-child/stylesheets/style.css 
+2014-02-08 17:58:24     error stylesheets/style.sass (Line 30 of stylesheets/_header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 17:58:24 overwrite ..naked-wordpress-child/stylesheets/style.css 
+2014-02-08 18:01:25     error stylesheets/style.sass (Line 30 of stylesheets/_header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 18:01:25 overwrite ..naked-wordpress-child/stylesheets/style.css 
+2014-02-08 18:03:15    remove .sass-cache/ 
+2014-02-08 18:03:15    remove ..naked-wordpress-child/stylesheets/style.css 
+2014-02-08 18:03:18     error stylesheets/style.sass (Line 30 of stylesheets/_header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 18:03:18    create ..naked-wordpress-child/stylesheets/style.css 
+2014-02-08 18:05:45 overwrite style.css 
+2014-02-08 18:05:50    remove .sass-cache/ 
+2014-02-08 18:05:50    remove style.css 
+2014-02-08 18:05:56    create style.css 

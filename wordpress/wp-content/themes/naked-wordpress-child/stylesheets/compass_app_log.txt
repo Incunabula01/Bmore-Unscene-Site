@@ -4,3 +4,38 @@
 2014-02-01 15:31:14    create style.css 
 2014-02-02 14:57:10    create style.css 
 2014-02-02 14:57:23    create style.css 
+2014-02-08 14:27:13 overwrite ../style.css 
+2014-02-08 17:00:47    remove .sass-cache/ 
+2014-02-08 17:00:47    remove style.css 
+2014-02-08 17:00:54    create style.css 
+2014-02-08 17:02:09     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:02:09 overwrite style.css 
+2014-02-08 17:02:32     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:02:32 identical style.css 
+2014-02-08 17:06:45     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:06:45 overwrite style.css 
+2014-02-08 17:10:25     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:10:25    create ../naked-wordpress-child/style.css 
+2014-02-08 17:10:28    remove .sass-cache/ 
+2014-02-08 17:10:28    remove ../naked-wordpress-child/style.css 
+2014-02-08 17:10:31     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:10:31    create ../naked-wordpress-child/style.css 
+2014-02-08 17:10:32     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:10:32 overwrite ../naked-wordpress-child/style.css 
+2014-02-08 17:11:29     error style.sass (Line 5 of _header.sass: The line was indented 2 levels deeper than the previous line.)
+2014-02-08 17:11:29    create naked-wordpress-child/style.css 
+2014-02-08 17:11:59 overwrite naked-wordpress-child/style.css 
+2014-02-08 17:12:20    remove .sass-cache/ 
+2014-02-08 17:12:20    remove naked-wordpress-child/style.css 
+2014-02-08 17:12:22    create naked-wordpress-child/style.css 
+2014-02-08 17:12:53 identical naked-wordpress-child/style.css 
+2014-02-08 17:14:34     error style.sass (Line 4 of _header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 17:14:34 overwrite naked-wordpress-child/style.css 
+2014-02-08 17:14:49    remove .sass-cache/ 
+2014-02-08 17:14:49    remove naked-wordpress-child/style.css 
+2014-02-08 17:14:51     error style.sass (Line 4 of _header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 17:14:51    create naked-wordpress-child/style.css 
+2014-02-08 17:15:54     error style.sass (Line 9 of _header.sass: Illegal nesting: Only properties may be nested beneath properties.)
+2014-02-08 17:15:54 overwrite naked-wordpress-child/style.css 
+2014-02-08 17:19:35 overwrite naked-wordpress-child/style.css 
+2014-02-08 17:24:33 identical naked-wordpress-child/style.css 

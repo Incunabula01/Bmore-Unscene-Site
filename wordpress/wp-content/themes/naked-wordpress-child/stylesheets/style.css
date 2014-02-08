@@ -1,177 +1,57 @@
-@import url("../naked-wordpress-master/style.css");
-/*!
- *Theme Name: Naked Wordpress Child
- *Theme URI: http://naked-wordpress.bckmn.com
- *Template: naked-wordpress-master
- *Description: Child theme for Naked Wordpress
- *Author URI: naked-wordpress.bckmn.com
- *Version: 1.0
- *Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu (optional)
- *General comments (optional). */
-@font-face {
-  font-family: "BorgiaPro-Regular";
-  src: url('fonts/BorgiaPro-Regular-webfont.ttf') format('truetype'), url('fonts/BorgiaPro-Regular-webfont.woff') format('woff'), url('fonts/BorgiaPro-Regular-webfont.eot') format('embedded-opentype'), url('fonts/BorgiaPro-Regular-webfont.svg') format('svg');
-}
+/*
+Syntax error: The line was indented 2 levels deeper than the previous line.
+        on line 5 of /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/_header.sass
+        from line 15 of /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/style.sass
 
-@font-face {
-  font-family: "BorgiaPro-Italic";
-  src: url('fonts/BorgiaPro-Italic-webfont.ttf') format('truetype'), url('fonts/BorgiaPro-Italic-webfont.woff') format('woff'), url('fonts/BorgiaPro-Italic-webfont.eot') format('embedded-opentype'), url('fonts/BorgiaPro-Italic-webfont.svg') format('svg');
-}
+1: /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/style.sass
 
-@font-face {
-  font-family: "SofiaProLight";
-  src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
-}
-
-/* line 16, _typography.sass */
-Body {
-  font-family: BorgiaPro-Regular, serif;
-  font-size: 16px;
-  color: #888888;
-  background-color: #e6e6e6;
-}
-
-/* line 22, _typography.sass */
-h1, h2 {
-  font-family: SofiaProLight, sans-serif;
-  color: #888888;
-}
-
-/* line 26, _typography.sass */
-h3, h4, h5, h6 {
-  font-family: BorgiaPro-Italic, serif;
-}
-
-/* line 29, _typography.sass */
-a:hover,
-a:focus,
-a:active {
-  color: #c71100;
-}
-
-/* line 1, _header.sass */
-header {
-  background-color: #464646;
-  color: #eeeeee;
-}
-/* line 4, _header.sass */
-header .inner-wrapper {
-  position: relative;
-  overflow-x: hidden;
-}
-/* line 8, _header.sass */
-header .inner-wrapper #logo {
-  background: url("BmoreUnsceneLogo.png") no-repeat 0;
-  min-height: 102px;
-  width: 102px;
-  display: block;
-}
-/* line 13, _header.sass */
-header .inner-wrapper #brand-text {
-  margin: 8% 0 0 2%;
-}
-/* line 15, _header.sass */
-header .inner-wrapper #brand-text h1 {
-  color: #eeeeee;
-  font-size: 200%;
-  letter-spacing: 0.125em;
-  font-weight: 100;
-  line-height: 1em;
-}
-/* line 21, _header.sass */
-header .inner-wrapper #brand-text .site-description {
-  font: BorgiaPro-Italic, serif;
-  color: #eeeeee;
-}
-/* line 25, _header.sass */
-header .inner-wrapper .nav-open {
-  overflow: hidden;
-}
-/* line 27, _header.sass */
-header .inner-wrapper nav {
-  font-family: BorgiaPro-Regular, serif;
-}
-/* line 30, _header.sass */
-header .inner-wrapper nav ul li {
-  border-right: 0.5px solid white;
-  padding: 0px 8px 0px 8px;
-  margin: 2px 0px;
-}
-/* line 34, _header.sass */
-header .inner-wrapper nav ul li a {
-  color: #eeeeee;
-  font-size: 18px;
-}
-
-/* Tablet Portrait to Screen */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 15, _media-queries.sass */
-  body header #brand-text {
-    margin: 6% 0 0 5%;
-  }
-  /* line 17, _media-queries.sass */
-  body header #brand-text .site-title {
-    font-size: 180% !important;
-    line-height: 1em;
-  }
-  /* line 24, _media-queries.sass */
-  body header nav ul li a {
-    font-size: 90%;
-  }
-}
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 32, _media-queries.sass */
-  body header #logo {
-    height: 120px;
-    width: 100%;
-    background-position: 50% 0;
-    border-bottom: 0.5px solid #eeeeee;
-  }
-  /* line 34, _media-queries.sass */
-  body header #brand-text {
-    margin: 0px;
-    text-align: center;
-  }
-  /* line 37, _media-queries.sass */
-  body header #brand-text .site-title {
-    font-size: 150% !important;
-    line-height: 0.5em;
-  }
-  /* line 41, _media-queries.sass */
-  body header .main-navigation {
-    visibility: hidden;
-  }
-  /* line 43, _media-queries.sass */
-  body header .mobile-navigation {
-    display: inline;
-  }
-}
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-  /* line 52, _media-queries.sass */
-  body header #logo {
-    height: 120px;
-    width: 100%;
-    background-position: 50% 0;
-    border-bottom: 0.5px solid #eeeeee;
-  }
-  /* line 54, _media-queries.sass */
-  body header #brand-text {
-    margin: 0px;
-    text-align: center;
-  }
-  /* line 57, _media-queries.sass */
-  body header #brand-text .site-title {
-    font-size: 125% !important;
-    line-height: 0.5em;
-  }
-  /* line 61, _media-queries.sass */
-  body header .main-navigation {
-    visibility: hidden;
-  }
-  /* line 63, _media-queries.sass */
-  body header .mobile-navigation {
-    display: inline;
-  }
-}
+Backtrace:
+/Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/_header.sass:5
+/Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/style.sass:15
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:457:in `tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:460:in `tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:345:in `_to_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:272:in `to_tree'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
+org/jruby/RubyKernel.java:2109:in `send'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_common/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:60:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:59:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/compass_patch.rb:58:in `compile'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1620:in `each'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Applications/compass.app/Contents/Resources/lib/ruby/compass_0.12/backport_from_0.13/lib/compass/watcher/compiler.rb:25:in `compile'
+org/jruby/RubyKernel.java:2105:in `send'
+(__FORWARDABLE__):3:in `compile'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/app_watcher.rb:40:in `watch!'
+file:/Applications/compass.app/Contents/Resources/Java/compass-app.jar!/ui/tray.rb:447:in `watch'
+org/jruby/RubyProc.java:270:in `call'
+org/jruby/RubyProc.java:224:in `call'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: The line was indented 2 levels deeper than the previous line.\A         on line 5 of /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/_header.sass\A         from line 15 of /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/style.sass\A \A 1: /Users/joe/Pictures/Freelance/Bmore Unscene/Bmore-Unscene-Site/wordpress/wp-content/themes/naked-wordpress-child/stylesheets/style.sass"; }

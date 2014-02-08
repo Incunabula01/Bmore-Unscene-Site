@@ -23,7 +23,7 @@
   src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
 }
 
-/* line 16, _typography.sass */
+/* line 16, stylesheets/_typography.sass */
 Body {
   font-family: BorgiaPro-Regular, serif;
   font-size: 16px;
@@ -31,146 +31,141 @@ Body {
   background-color: #e6e6e6;
 }
 
-/* line 22, _typography.sass */
+/* line 22, stylesheets/_typography.sass */
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #888888;
 }
 
-/* line 26, _typography.sass */
+/* line 26, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
 }
 
-/* line 29, _typography.sass */
+/* line 29, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
   color: #c71100;
 }
 
-/* line 1, _header.sass */
+/* line 1, stylesheets/_header.sass */
 header {
   background-color: #464646;
   color: #eeeeee;
 }
-/* line 4, _header.sass */
-header .inner-wrapper {
-  position: relative;
-  overflow-x: hidden;
-}
-/* line 8, _header.sass */
-header .inner-wrapper #logo {
+/* line 4, stylesheets/_header.sass */
+header #logo {
   background: url("BmoreUnsceneLogo.png") no-repeat 0;
   min-height: 102px;
   width: 102px;
   display: block;
 }
-/* line 13, _header.sass */
-header .inner-wrapper #brand-text {
+/* line 9, stylesheets/_header.sass */
+header #brand-text {
   margin: 8% 0 0 2%;
 }
-/* line 15, _header.sass */
-header .inner-wrapper #brand-text h1 {
+/* line 11, stylesheets/_header.sass */
+header #brand-text h1 {
   color: #eeeeee;
   font-size: 200%;
   letter-spacing: 0.125em;
   font-weight: 100;
   line-height: 1em;
 }
-/* line 21, _header.sass */
-header .inner-wrapper #brand-text .site-description {
+/* line 17, stylesheets/_header.sass */
+header #brand-text .site-description {
   font: BorgiaPro-Italic, serif;
   color: #eeeeee;
 }
-/* line 25, _header.sass */
-header .inner-wrapper .nav-open {
+/* line 21, stylesheets/_header.sass */
+header .nav-open {
   overflow: hidden;
 }
-/* line 27, _header.sass */
-header .inner-wrapper nav {
+/* line 23, stylesheets/_header.sass */
+header nav {
   font-family: BorgiaPro-Regular, serif;
 }
-/* line 30, _header.sass */
-header .inner-wrapper nav ul li {
+/* line 26, stylesheets/_header.sass */
+header nav ul li {
   border-right: 0.5px solid white;
   padding: 0px 8px 0px 8px;
   margin: 2px 0px;
 }
-/* line 34, _header.sass */
-header .inner-wrapper nav ul li a {
+/* line 30, stylesheets/_header.sass */
+header nav ul li a {
   color: #eeeeee;
   font-size: 18px;
 }
 
 /* Tablet Portrait to Screen */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 15, _media-queries.sass */
+  /* line 15, stylesheets/_media-queries.sass */
   body header #brand-text {
     margin: 6% 0 0 5%;
   }
-  /* line 17, _media-queries.sass */
+  /* line 17, stylesheets/_media-queries.sass */
   body header #brand-text .site-title {
     font-size: 180% !important;
     line-height: 1em;
   }
-  /* line 24, _media-queries.sass */
+  /* line 24, stylesheets/_media-queries.sass */
   body header nav ul li a {
     font-size: 90%;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 32, _media-queries.sass */
+  /* line 32, stylesheets/_media-queries.sass */
   body header #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 34, _media-queries.sass */
+  /* line 34, stylesheets/_media-queries.sass */
   body header #brand-text {
     margin: 0px;
     text-align: center;
   }
-  /* line 37, _media-queries.sass */
+  /* line 37, stylesheets/_media-queries.sass */
   body header #brand-text .site-title {
     font-size: 150% !important;
     line-height: 0.5em;
   }
-  /* line 41, _media-queries.sass */
+  /* line 41, stylesheets/_media-queries.sass */
   body header .main-navigation {
     visibility: hidden;
   }
-  /* line 43, _media-queries.sass */
+  /* line 43, stylesheets/_media-queries.sass */
   body header .mobile-navigation {
     display: inline;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  /* line 52, _media-queries.sass */
+  /* line 52, stylesheets/_media-queries.sass */
   body header #logo {
     height: 120px;
     width: 100%;
     background-position: 50% 0;
     border-bottom: 0.5px solid #eeeeee;
   }
-  /* line 54, _media-queries.sass */
+  /* line 54, stylesheets/_media-queries.sass */
   body header #brand-text {
     margin: 0px;
     text-align: center;
   }
-  /* line 57, _media-queries.sass */
+  /* line 57, stylesheets/_media-queries.sass */
   body header #brand-text .site-title {
     font-size: 125% !important;
     line-height: 0.5em;
   }
-  /* line 61, _media-queries.sass */
+  /* line 61, stylesheets/_media-queries.sass */
   body header .main-navigation {
     visibility: hidden;
   }
-  /* line 63, _media-queries.sass */
+  /* line 63, stylesheets/_media-queries.sass */
   body header .mobile-navigation {
     display: inline;
   }
