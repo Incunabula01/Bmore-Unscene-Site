@@ -24,25 +24,26 @@
   src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
 }
 
-/* line 16, stylesheets/_typography.sass */
+/* line 19, stylesheets/_typography.sass */
 Body {
   font-family: BorgiaPro-Regular, serif;
   color: #888888;
   background-color: #e6e6e6;
+  font-size: 16px;
 }
 
-/* line 21, stylesheets/_typography.sass */
+/* line 25, stylesheets/_typography.sass */
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #888888;
 }
 
-/* line 25, stylesheets/_typography.sass */
+/* line 29, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
 }
 
-/* line 28, stylesheets/_typography.sass */
+/* line 32, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
@@ -80,4 +81,69 @@ header nav {
 header .mobile-nav-container {
   top: 200px;
   width: 25%;
+}
+
+/* Phone to Tablet */
+@media only screen and (max-width: 640px) {
+  /* line 3, stylesheets/_media-queries.sass */
+  header {
+    min-width: 100%;
+    max-height: 55px;
+  }
+  /* line 6, stylesheets/_media-queries.sass */
+  header .siteinfo {
+    padding: 1.5px 0;
+  }
+  /* line 8, stylesheets/_media-queries.sass */
+  header .siteinfo #logo {
+    font-weight: 300;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+    background: none;
+    width: 100%;
+    min-height: 50px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  /* line 18, stylesheets/_media-queries.sass */
+  header .siteinfo .subhead {
+    display: none;
+  }
+  /* line 22, stylesheets/_media-queries.sass */
+  header .button {
+    margin: 0.5em;
+    border: 0.2px solid #f7f7f7;
+    background-color: inherit;
+    color: white;
+    box-shadow: none;
+  }
+  /* line 28, stylesheets/_media-queries.sass */
+  header .button:hover {
+    border: 0.5px solid white;
+    background-color: #888888;
+    color: #f7f7f7;
+  }
+  /* line 32, stylesheets/_media-queries.sass */
+  header .button:focus {
+    box-shadow: white;
+  }
+  /* line 34, stylesheets/_media-queries.sass */
+  header .mobile-nav-container {
+    top: 68px;
+    width: 55%;
+    background-color: #5c5c5c;
+    color: #f7f7f7;
+  }
+  /* line 39, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul {
+    font-size: 16px;
+    color: #f7f7f7;
+    background-color: #5c5c5c 20%;
+  }
+  /* line 43, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul a:hover {
+    background-color: #5c5c5c;
+    color: white;
+  }
 }
