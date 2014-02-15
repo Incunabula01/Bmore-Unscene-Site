@@ -1,31 +1,29 @@
-$box-inset: -5px 0px 2px $dark-grey inset
+$box-inset: -5px 0px 2px #333333 inset
 $box-border: 0.1em solid $white
 
 /* Phone to Tablet */
 
-@media only screen and (max-width: 640px)
+@media only screen and (max-width: 767px)
 	header
 		min-width: 100%
 		max-height: 55px
-
-		.siteinfo 
-			padding: 1.2px 0
-			#main-logo
-				background: none
-				width: 100%
-				min-height: 50px
-				padding: 0 3em 3em 1.5em
+		#main-logo
+			background: none
+			width: 100%
+			min-height: 50px
+			padding: 1.7em 3em 0 3em 
+			h1
+				text-align: center
+				font-weight: 300
+				font-size: 1.8em
+				letter-spacing: -0.020em
 				margin: 0px
-				h1
-					text-align: center
-					font-weight: 300
-					font-size: 2.2em
-					letter-spacing: -0.020em
-					#logo
-						color: $header-text
-				h4.subhead 
-					display: none
-					
+				#logo
+					color: $header-text
+			h4.subhead 
+				display: none
+		
+			
 		.button
 			margin: 0.5em
 			border: $box-border
@@ -52,18 +50,34 @@ $box-border: 0.1em solid $white
 			ul.tabs.vertical
 				margin-bottom: 0px
 				li
-					font-size: 2em
 					border: 0px none 
 					box-shadow: $box-inset
 					a
+						font-size: 16px
 						box-shadow: $box-inset
 						color: $off-white
-						background: 0 no-repeat $base-color
+						background: 0 no-repeat $dark-grey
 					a:hover
 						box-shadow: $box-inset
-						background: $dark-grey
+						background: $darker-grey
 						color: $white
-				
+				li.active
+					background: $darker-grey
+
+					
+
+/* Tablet to Screen */
+
+@media (max-width:767) and (max-width: 1023)
+	header
+		#main-logo
+			width: 200px
+			h1
+				font-size: 1em
+				font-weight: 100
+				line-height: 1em
+      			
+
 
 		
 		

@@ -24,33 +24,34 @@
   src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
 }
 
-/* line 19, stylesheets/_typography.sass */
+/* line 20, stylesheets/_typography.sass */
 Body {
   font-family: BorgiaPro-Regular, serif;
-  color: #888888;
+  color: #8b8b8b;
   background-color: #f7f7f7;
   font-size: 16px;
 }
 
-/* line 25, stylesheets/_typography.sass */
+/* line 26, stylesheets/_typography.sass */
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #eeeeee;
-  background-color: #888888;
+  background-color: #8b8b8b;
   letter-spacing: -0.02em;
 }
 
-/* line 31, stylesheets/_typography.sass */
+/* line 32, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
 }
 
-/* line 34, stylesheets/_typography.sass */
+/* line 35, stylesheets/_typography.sass */
 a {
   color: white;
+  font-weight: 300;
 }
 
-/* line 37, stylesheets/_typography.sass */
+/* line 39, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
@@ -59,7 +60,7 @@ a:active {
 
 /* line 1, stylesheets/_header.sass */
 header {
-  background-color: #888888;
+  background-color: #8b8b8b;
   color: #eeeeee;
 }
 /* line 4, stylesheets/_header.sass */
@@ -73,7 +74,7 @@ header #main-logo {
 }
 /* line 11, stylesheets/_header.sass */
 header #main-logo h1 {
-  font-size: 2.6em;
+  font-size: 2em;
   font-weight: 100;
   line-height: 0.15em;
 }
@@ -88,120 +89,136 @@ header #main-logo h4.subhead {
 }
 /* line 22, stylesheets/_header.sass */
 header .nav-bar {
-  background: #5c5c5c;
+  background: #8b8b8b;
 }
 /* line 24, stylesheets/_header.sass */
 header .nav-bar li {
-  border-right: 0.5em solid white;
-  border-color: #888888;
-  border-width: none;
+  border-color: #8b8b8b;
+  border-width: 0em;
   box-shadow: none;
 }
-/* line 29, stylesheets/_header.sass */
+/* line 28, stylesheets/_header.sass */
 header .nav-bar li a {
-  color: #888888;
-  font-size: 1em;
+  border-left: 0.1rem solid white;
+  color: #8b8b8b;
 }
-/* line 33, stylesheets/_header.sass */
-header .nav-bar li a:focus {
-  color: #5c5c5c;
+/* line 31, stylesheets/_header.sass */
+header .nav-bar li a:first-child {
+  font-size: 1.2em;
+  padding: 0 15px;
 }
 /* line 35, stylesheets/_header.sass */
-header .nav-bar .active {
-  background: #5c5c5c;
-  border-color: #5c5c5c;
-  padding: 0 -50px;
+header .nav-bar li a:focus {
+  color: #494949;
 }
-/* line 39, stylesheets/_header.sass */
+/* line 37, stylesheets/_header.sass */
+header .nav-bar .active {
+  background: #494949;
+  border-color: #8b8b8b;
+  color: #525252;
+}
+/* line 41, stylesheets/_header.sass */
 header .nav-bar .active:hover {
-  background: #5c5c5c;
-  border-left: 0px;
-  padding: 0 -50px;
+  background: #444444;
+  color: #333333;
 }
 
 /* Phone to Tablet */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   /* line 7, stylesheets/_media-queries.sass */
   header {
     min-width: 100%;
     max-height: 55px;
   }
-  /* line 11, stylesheets/_media-queries.sass */
-  header .siteinfo {
-    padding: 1.2px 0;
-  }
-  /* line 13, stylesheets/_media-queries.sass */
-  header .siteinfo #main-logo {
+  /* line 10, stylesheets/_media-queries.sass */
+  header #main-logo {
     background: none;
     width: 100%;
     min-height: 50px;
-    padding: 0 3em 3em 1.5em;
-    margin: 0px;
+    padding: 1.7em 3em 0 3em;
   }
-  /* line 19, stylesheets/_media-queries.sass */
-  header .siteinfo #main-logo h1 {
+  /* line 15, stylesheets/_media-queries.sass */
+  header #main-logo h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 1.8em;
     letter-spacing: -0.02em;
+    margin: 0px;
   }
-  /* line 24, stylesheets/_media-queries.sass */
-  header .siteinfo #main-logo h1 #logo {
+  /* line 21, stylesheets/_media-queries.sass */
+  header #main-logo h1 #logo {
     color: #eeeeee;
   }
-  /* line 26, stylesheets/_media-queries.sass */
-  header .siteinfo #main-logo h4.subhead {
+  /* line 23, stylesheets/_media-queries.sass */
+  header #main-logo h4.subhead {
     display: none;
   }
-  /* line 29, stylesheets/_media-queries.sass */
+  /* line 27, stylesheets/_media-queries.sass */
   header .button {
     margin: 0.5em;
     border: 0.1em solid white;
-    background-color: #888888;
+    background-color: #8b8b8b;
     color: white;
     box-shadow: none;
     background: none;
   }
-  /* line 36, stylesheets/_media-queries.sass */
+  /* line 34, stylesheets/_media-queries.sass */
   header .button:hover {
     border: 0.1em solid white;
-    background-color: #5c5c5c;
+    background-color: #494949;
     color: white;
   }
-  /* line 40, stylesheets/_media-queries.sass */
+  /* line 38, stylesheets/_media-queries.sass */
   header .button:focus {
     box-shadow: none;
     border: 0.1em solid white;
   }
-  /* line 45, stylesheets/_media-queries.sass */
+  /* line 43, stylesheets/_media-queries.sass */
   header .mobile-nav-container {
     top: 68px;
     width: 50%;
-    background-color: #888888;
+    background-color: #8b8b8b;
     color: #f7f7f7;
-    box-shadow: -5px 0px 2px #5c5c5c inset;
+    box-shadow: -5px 0px 2px #333333 inset;
     border-right: 2px solid #f7f7f7;
   }
-  /* line 52, stylesheets/_media-queries.sass */
+  /* line 50, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical {
     margin-bottom: 0px;
   }
-  /* line 54, stylesheets/_media-queries.sass */
+  /* line 52, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li {
-    font-size: 2em;
     border: 0px none;
-    box-shadow: -5px 0px 2px #5c5c5c inset;
+    box-shadow: -5px 0px 2px #333333 inset;
   }
-  /* line 58, stylesheets/_media-queries.sass */
+  /* line 55, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a {
-    box-shadow: -5px 0px 2px #5c5c5c inset;
+    font-size: 16px;
+    box-shadow: -5px 0px 2px #333333 inset;
     color: #f7f7f7;
-    background: 0 no-repeat #888888;
+    background: 0 no-repeat #494949;
   }
-  /* line 62, stylesheets/_media-queries.sass */
+  /* line 60, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a:hover {
-    box-shadow: -5px 0px 2px #5c5c5c inset;
-    background: #5c5c5c;
+    box-shadow: -5px 0px 2px #333333 inset;
+    background: #444444;
     color: white;
+  }
+  /* line 64, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li.active {
+    background: #444444;
+  }
+}
+/* Tablet to Screen */
+@media (max-width: 767) and (max-width: 1023) {
+  /* line 73, stylesheets/_media-queries.sass */
+  header #main-logo {
+    width: 200px;
+  }
+  /* line 75, stylesheets/_media-queries.sass */
+  header #main-logo h1 {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1em;
   }
 }

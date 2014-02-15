@@ -9,7 +9,7 @@ header
     margin: 0.5em 0 0 0.5em
     padding: 2em 0 1em 7em
     h1
-      font-size: 2.6em
+      font-size: 2em
       font-weight: 100
       line-height: 0.15em
       #logo
@@ -20,23 +20,26 @@ header
       
 
   .nav-bar
-    background: $dark-grey
+    background: $base-color
     li
-      border-right: 0.5em solid $white
       border-color: $base-color
-      border-width: none
+      border-width: 0em
       box-shadow: none
       a
+        border-left: 0.1rem solid $white
         color: $base-color
-        font-size: 1em
+      a:first-child
+        font-size: 1.2em
+        padding: 0 15px
       a:hover
       a:focus
         color: $dark-grey
     .active
       background: $dark-grey
-      border-color: $dark-grey
-      padding: 0 -50px 
+      border-color: $base-color
+      color: #525252
     .active:hover
-      background: $dark-grey
-      border-left: 0px
-      padding:  0 -50px
+      background: $darker-grey
+      color: #333333
+
+        
