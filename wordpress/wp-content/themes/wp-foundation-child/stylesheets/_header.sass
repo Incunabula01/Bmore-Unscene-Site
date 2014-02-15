@@ -1,23 +1,42 @@
 header
-  background-color: #464646
+  background-color: $base-color
   color: $header-text
-  #logo
-    background: url("BmoreUnsceneLogo.png") no-repeat 0
-    min-height: 102px
-    width: 102px
+  #main-logo
+    background: 10px 20px url("BmoreUnsceneLogo.png")  no-repeat
+    min-height: 115px
+    width: 400px
     display: block
     margin: 0.5em 0 0 0.5em
-    padding: 0 0 0 3em
-    color: $header-text
-    letter-spacing: 0.125em
-    font-weight: 100
-    line-height: 1em
-  h4
-    margin: 0 0 0 3em
-    font-weight: 100    
+    padding: 2em 0 1em 7em
+    h1
+      font-size: 2.6em
+      font-weight: 100
+      line-height: 0.15em
+      #logo
+        color: $header-text
+    h4.subhead
+      padding: -8em 0 1em 6em
+      font-weight: 100      
+      
 
-  nav
-    font-family: $body-copy
-  .mobile-nav-container
-    top: 200px
-    width: 25%
+  .nav-bar
+    background: $dark-grey
+    li
+      border-right: 0.5em solid $white
+      border-color: $base-color
+      border-width: none
+      box-shadow: none
+      a
+        color: $base-color
+        font-size: 1em
+      a:hover
+      a:focus
+        color: $dark-grey
+    .active
+      background: $dark-grey
+      border-color: $dark-grey
+      padding: 0 -50px 
+    .active:hover
+      background: $dark-grey
+      border-left: 0px
+      padding:  0 -50px

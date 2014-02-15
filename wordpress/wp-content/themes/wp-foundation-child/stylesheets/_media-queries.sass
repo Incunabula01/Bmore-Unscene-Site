@@ -1,45 +1,69 @@
+$box-inset: -5px 0px 2px $dark-grey inset
+$box-border: 0.1em solid $white
+
 /* Phone to Tablet */
+
 @media only screen and (max-width: 640px)
 	header
 		min-width: 100%
 		max-height: 55px
+
 		.siteinfo 
-			padding: 1.5px 0
-			#logo
-				font-weight: 300
-				font-size: 0.5em
-				letter-spacing: 0.1em
+			padding: 1.2px 0
+			#main-logo
 				background: none
 				width: 100%
 				min-height: 50px
-				padding: 0px
+				padding: 0 3em 3em 1.5em
 				margin: 0px
-				text-align: center
-			.subhead 
-				display: none
-
-		
+				h1
+					text-align: center
+					font-weight: 300
+					font-size: 2.2em
+					letter-spacing: -0.020em
+					#logo
+						color: $header-text
+				h4.subhead 
+					display: none
+					
 		.button
 			margin: 0.5em
-			border: 0.2px solid $off-white
-			background-color: inherit
+			border: $box-border
+			background-color: $base-color
 			color: $white
 			box-shadow: none
+			background: none
 		.button:hover
-			border: 0.5px solid $white
-			background-color: $base-color
-			color: $off-white
+			border: $box-border
+			background-color: $dark-grey
+			color: $white
 		.button:focus
-			box-shadow: $white
+			box-shadow: none
+			border: 0.1em solid $white
+
+
 		.mobile-nav-container
 			top: 68px
-			width: 55%
-			background-color: $dark-grey
+			width: 50%
+			background-color: $base-color
 			color: $off-white
-			ul
-				font-size: 16px
-				color: $off-white
-				background-color: $dark-grey 20%
-				a:hover
-					background-color: $dark-grey
-					color: $white
+			box-shadow: $box-inset
+			border-right: 2px solid $off-white
+			ul.tabs.vertical
+				margin-bottom: 0px
+				li
+					font-size: 2em
+					border: 0px none 
+					box-shadow: $box-inset
+					a
+						box-shadow: $box-inset
+						color: $off-white
+						background: 0 no-repeat $base-color
+					a:hover
+						box-shadow: $box-inset
+						background: $dark-grey
+						color: $white
+				
+
+		
+		

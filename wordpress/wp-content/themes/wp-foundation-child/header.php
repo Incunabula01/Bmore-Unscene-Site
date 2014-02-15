@@ -134,8 +134,10 @@
 
 					<?php bones_mobile_nav(); ?>
 					<div class="siteinfo">
-						<h1><a class="brand" id="logo" href="<?php echo get_bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-						<h4 class="subhead"><?php echo get_bloginfo ( 'description' ); ?></h4>
+						<div id="main-logo">
+							<h1><a class="brand" id="logo" href="<?php echo get_bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+							<h4 class="subhead"><?php echo get_bloginfo ( 'description' ); ?></h4>
+						</div>
 					</div>
 			
 				</header> <!-- end header -->

@@ -28,22 +28,29 @@
 Body {
   font-family: BorgiaPro-Regular, serif;
   color: #888888;
-  background-color: #e6e6e6;
+  background-color: #f7f7f7;
   font-size: 16px;
 }
 
 /* line 25, stylesheets/_typography.sass */
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
-  color: #888888;
+  color: #eeeeee;
+  background-color: #888888;
+  letter-spacing: -0.02em;
 }
 
-/* line 29, stylesheets/_typography.sass */
+/* line 31, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
 }
 
-/* line 32, stylesheets/_typography.sass */
+/* line 34, stylesheets/_typography.sass */
+a {
+  color: white;
+}
+
+/* line 37, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
@@ -52,98 +59,149 @@ a:active {
 
 /* line 1, stylesheets/_header.sass */
 header {
-  background-color: #464646;
+  background-color: #888888;
   color: #eeeeee;
 }
 /* line 4, stylesheets/_header.sass */
-header #logo {
-  background: url("BmoreUnsceneLogo.png") no-repeat 0;
-  min-height: 102px;
-  width: 102px;
+header #main-logo {
+  background: 10px 20px url("BmoreUnsceneLogo.png") no-repeat;
+  min-height: 115px;
+  width: 400px;
   display: block;
   margin: 0.5em 0 0 0.5em;
-  padding: 0 0 0 3em;
-  color: #eeeeee;
-  letter-spacing: 0.125em;
+  padding: 2em 0 1em 7em;
+}
+/* line 11, stylesheets/_header.sass */
+header #main-logo h1 {
+  font-size: 2.6em;
   font-weight: 100;
-  line-height: 1em;
+  line-height: 0.15em;
 }
 /* line 15, stylesheets/_header.sass */
-header h4 {
-  margin: 0 0 0 3em;
+header #main-logo h1 #logo {
+  color: #eeeeee;
+}
+/* line 17, stylesheets/_header.sass */
+header #main-logo h4.subhead {
+  padding: -8em 0 1em 6em;
   font-weight: 100;
 }
-/* line 19, stylesheets/_header.sass */
-header nav {
-  font-family: BorgiaPro-Regular, serif;
+/* line 22, stylesheets/_header.sass */
+header .nav-bar {
+  background: #5c5c5c;
 }
-/* line 21, stylesheets/_header.sass */
-header .mobile-nav-container {
-  top: 200px;
-  width: 25%;
+/* line 24, stylesheets/_header.sass */
+header .nav-bar li {
+  border-right: 0.5em solid white;
+  border-color: #888888;
+  border-width: none;
+  box-shadow: none;
+}
+/* line 29, stylesheets/_header.sass */
+header .nav-bar li a {
+  color: #888888;
+  font-size: 1em;
+}
+/* line 33, stylesheets/_header.sass */
+header .nav-bar li a:focus {
+  color: #5c5c5c;
+}
+/* line 35, stylesheets/_header.sass */
+header .nav-bar .active {
+  background: #5c5c5c;
+  border-color: #5c5c5c;
+  padding: 0 -50px;
+}
+/* line 39, stylesheets/_header.sass */
+header .nav-bar .active:hover {
+  background: #5c5c5c;
+  border-left: 0px;
+  padding: 0 -50px;
 }
 
 /* Phone to Tablet */
 @media only screen and (max-width: 640px) {
-  /* line 3, stylesheets/_media-queries.sass */
+  /* line 7, stylesheets/_media-queries.sass */
   header {
     min-width: 100%;
     max-height: 55px;
   }
-  /* line 6, stylesheets/_media-queries.sass */
+  /* line 11, stylesheets/_media-queries.sass */
   header .siteinfo {
-    padding: 1.5px 0;
+    padding: 1.2px 0;
   }
-  /* line 8, stylesheets/_media-queries.sass */
-  header .siteinfo #logo {
-    font-weight: 300;
-    font-size: 0.5em;
-    letter-spacing: 0.1em;
+  /* line 13, stylesheets/_media-queries.sass */
+  header .siteinfo #main-logo {
     background: none;
     width: 100%;
     min-height: 50px;
-    padding: 0px;
+    padding: 0 3em 3em 1.5em;
     margin: 0px;
-    text-align: center;
   }
-  /* line 18, stylesheets/_media-queries.sass */
-  header .siteinfo .subhead {
+  /* line 19, stylesheets/_media-queries.sass */
+  header .siteinfo #main-logo h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.2em;
+    letter-spacing: -0.02em;
+  }
+  /* line 24, stylesheets/_media-queries.sass */
+  header .siteinfo #main-logo h1 #logo {
+    color: #eeeeee;
+  }
+  /* line 26, stylesheets/_media-queries.sass */
+  header .siteinfo #main-logo h4.subhead {
     display: none;
   }
-  /* line 22, stylesheets/_media-queries.sass */
+  /* line 29, stylesheets/_media-queries.sass */
   header .button {
     margin: 0.5em;
-    border: 0.2px solid #f7f7f7;
-    background-color: inherit;
+    border: 0.1em solid white;
+    background-color: #888888;
     color: white;
     box-shadow: none;
+    background: none;
   }
-  /* line 28, stylesheets/_media-queries.sass */
+  /* line 36, stylesheets/_media-queries.sass */
   header .button:hover {
-    border: 0.5px solid white;
-    background-color: #888888;
-    color: #f7f7f7;
+    border: 0.1em solid white;
+    background-color: #5c5c5c;
+    color: white;
   }
-  /* line 32, stylesheets/_media-queries.sass */
+  /* line 40, stylesheets/_media-queries.sass */
   header .button:focus {
-    box-shadow: white;
+    box-shadow: none;
+    border: 0.1em solid white;
   }
-  /* line 34, stylesheets/_media-queries.sass */
+  /* line 45, stylesheets/_media-queries.sass */
   header .mobile-nav-container {
     top: 68px;
-    width: 55%;
-    background-color: #5c5c5c;
+    width: 50%;
+    background-color: #888888;
     color: #f7f7f7;
+    box-shadow: -5px 0px 2px #5c5c5c inset;
+    border-right: 2px solid #f7f7f7;
   }
-  /* line 39, stylesheets/_media-queries.sass */
-  header .mobile-nav-container ul {
-    font-size: 16px;
+  /* line 52, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical {
+    margin-bottom: 0px;
+  }
+  /* line 54, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li {
+    font-size: 2em;
+    border: 0px none;
+    box-shadow: -5px 0px 2px #5c5c5c inset;
+  }
+  /* line 58, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li a {
+    box-shadow: -5px 0px 2px #5c5c5c inset;
     color: #f7f7f7;
-    background-color: #5c5c5c 20%;
+    background: 0 no-repeat #888888;
   }
-  /* line 43, stylesheets/_media-queries.sass */
-  header .mobile-nav-container ul a:hover {
-    background-color: #5c5c5c;
+  /* line 62, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li a:hover {
+    box-shadow: -5px 0px 2px #5c5c5c inset;
+    background: #5c5c5c;
     color: white;
   }
 }
