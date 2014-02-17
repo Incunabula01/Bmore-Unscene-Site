@@ -222,3 +222,31 @@ header .nav-bar .active:hover {
     line-height: 1em;
   }
 }
+/* line 3, stylesheets/_homepage.sass */
+header #featured .caption-box {
+  background-color: #8b8b8b;
+  opacity: 0.8;
+}
+/* line 6, stylesheets/_homepage.sass */
+header #featured .caption-box h3 {
+  font-size: 150%;
+}
+
+/* line 20, stylesheets/style.sass */
+.button {
+  background: #8b8b8b;
+  border: 0.1em solid #f7f7f7;
+  font-family: BorgiaPro-Italic, serif;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+/* line 27, stylesheets/style.sass */
+.button:hover {
+  background-color: #c71100;
+}
+
+/* line 30, stylesheets/style.sass */
+.button:focus {
+  box-shadow: 0px 0px 2px white inset;
+}

@@ -521,3 +521,11 @@
 2014-02-15 17:37:40 overwrite style.css 
 2014-02-15 17:38:16 overwrite style.css 
 2014-02-15 17:39:42 overwrite style.css 
+2014-02-17 16:09:01     error stylesheets/style.sass (Line 31: Invalid CSS after "...px $white inset": expected expression (e.g. 1px, bold), was ";")
+2014-02-17 16:09:01 overwrite style.css 
+2014-02-17 16:09:32 overwrite style.css 
+2014-02-17 16:11:58 overwrite style.css 
+2014-02-17 16:13:46 overwrite style.css 
+2014-02-17 16:13:54 overwrite style.css 
+2014-02-17 16:16:56 overwrite style.css 
+2014-02-17 16:18:17 overwrite style.css 

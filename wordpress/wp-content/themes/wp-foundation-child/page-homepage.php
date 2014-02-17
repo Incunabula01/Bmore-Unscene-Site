@@ -29,14 +29,14 @@ Template Name: Homepage
 									$args = array( 'numberposts' => 5 );
 									$myposts = get_posts( $args );
 									foreach( $myposts as $post ) :	setup_postdata($post); 
-										$post_thumbnail_id = get_post_thumbnail_id();
+										$post_thumbnail_id = get_post_thumbnail_id($post_id);
 										$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
 								?>
 								
-								<div style="background-color: #F2F2F2;">
-									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-									<?php the_excerpt(); ?>
-									<p><a href="<?php the_permalink(); ?>" class="button nice radius">Read more »</a></p>
+								<div class="caption-box" style="background-size:cover; background-image: url(<?php echo $featured_src[0]; ?>);">
+										<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+											<?php the_excerpt(); ?>
+										<p><a href="<?php the_permalink(); ?>" class="button">Read more »</a></p>
 								</div>
 								
 								<?php endforeach; ?>
@@ -66,7 +66,6 @@ Template Name: Homepage
 								
 							</div>
 							
-							<?php get_sidebar('sidebar2'); // sidebar 2 ?>
 													
 						</section> <!-- end article header -->
 						
@@ -102,7 +101,6 @@ Template Name: Homepage
 			
 				</div> <!-- end #main -->
     
-				<?php //get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 
