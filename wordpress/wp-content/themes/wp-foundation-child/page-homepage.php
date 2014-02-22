@@ -33,10 +33,12 @@ Template Name: Homepage
 										$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpf-home-featured' );
 								?>
 								
-								<div class="caption-box" style="background-size:cover; background-image: url(<?php echo $featured_src[0]; ?>);">
-										<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-											<?php the_excerpt(); ?>
-										<p><a href="<?php the_permalink(); ?>" class="button">Read more »</a></p>
+								<div style="background-size:cover; background-image: url(<?php echo $featured_src[0]; ?>);">
+										<span class="caption-container">
+											<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+												<?php the_excerpt(); ?>
+											<p><a href="<?php the_permalink(); ?>" class="button">Read more »</a></p>
+										</span>
 								</div>
 								
 								<?php endforeach; ?>
@@ -65,6 +67,8 @@ Template Name: Homepage
 								<?php the_content(); ?>
 								
 							</div>
+							<div class="four columns">
+								
 							
 													
 						</section> <!-- end article header -->

@@ -24,7 +24,7 @@
   src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
 }
 
-/* line 20, stylesheets/_typography.sass */
+/* line 21, stylesheets/_typography.sass */
 Body {
   font-family: BorgiaPro-Regular, serif;
   color: #8b8b8b;
@@ -32,7 +32,7 @@ Body {
   font-size: 16px;
 }
 
-/* line 26, stylesheets/_typography.sass */
+/* line 27, stylesheets/_typography.sass */
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #eeeeee;
@@ -40,22 +40,30 @@ h1, h2 {
   letter-spacing: -0.02em;
 }
 
-/* line 32, stylesheets/_typography.sass */
+/* line 33, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
+  font-weight: 300;
 }
 
-/* line 35, stylesheets/_typography.sass */
+/* line 37, stylesheets/_typography.sass */
 a {
   color: white;
   font-weight: 300;
 }
 
-/* line 39, stylesheets/_typography.sass */
+/* line 41, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
   color: #c71100;
+}
+
+/* line 46, stylesheets/_typography.sass */
+p {
+  font-size: 110%;
+  line-height: 1.1em;
+  font-weight: 300;
 }
 
 /* line 1, stylesheets/_header.sass */
@@ -222,14 +230,29 @@ header .nav-bar .active:hover {
     line-height: 1em;
   }
 }
-/* line 3, stylesheets/_homepage.sass */
-header #featured .caption-box {
-  background-color: #8b8b8b;
-  opacity: 0.8;
+/* line 1, stylesheets/_homepage.sass */
+.caption-container {
+  display: block;
+  background-color: #494949;
+  opacity: 0.9;
+  width: 350px;
+  min-height: 250px;
+  padding: 0.025em;
+  top: 1em;
+  left: 0.5em;
+  position: relative;
+  z-index: 5;
 }
-/* line 6, stylesheets/_homepage.sass */
-header #featured .caption-box h3 {
-  font-size: 150%;
+
+/* line 15, stylesheets/_homepage.sass */
+#featured h3 {
+  font-size: 3em;
+  padding-left: 0.5em;
+  margin-top: 0.5em;
+}
+/* line 19, stylesheets/_homepage.sass */
+#featured p {
+  padding-left: 1.5em;
 }
 
 /* line 20, stylesheets/style.sass */
