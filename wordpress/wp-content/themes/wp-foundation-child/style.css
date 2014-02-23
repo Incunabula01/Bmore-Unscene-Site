@@ -1,0 +1,276 @@
+@import url("../wp-foundation/stylesheets/app.css");
+@import url("../wp-foundation/style.css");
+/*!
+ *Theme Name: Wordpress Foundation Child
+ *Theme URI: http://320press.com/wpfoundation
+ *Template: wp-foundation
+ *Description: Child of WP Foundation
+ *Version: 2.0
+ *Author: 320press
+ *Author URI: http://320press.com
+ *Tags: bones, zurb, foundation, 320press, clean, basic */
+@font-face {
+  font-family: "BorgiaPro-Regular";
+  src: url('fonts/BorgiaPro-Regular-webfont.ttf') format('truetype'), url('fonts/BorgiaPro-Regular-webfont.woff') format('woff'), url('fonts/BorgiaPro-Regular-webfont.eot') format('embedded-opentype'), url('fonts/BorgiaPro-Regular-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "BorgiaPro-Italic";
+  src: url('fonts/BorgiaPro-Italic-webfont.ttf') format('truetype'), url('fonts/BorgiaPro-Italic-webfont.woff') format('woff'), url('fonts/BorgiaPro-Italic-webfont.eot') format('embedded-opentype'), url('fonts/BorgiaPro-Italic-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "SofiaProLight";
+  src: url('fonts/SofiaProLight-webfont.ttf') format('truetype'), url('fonts/SofiaProLight-webfont.woff') format('woff'), url('fonts/SofiaProLight-webfont.eot') format('embedded-opentype'), url('fonts/SofiaProLight-webfont.svg') format('svg');
+}
+
+/* line 21, stylesheets/_typography.sass */
+Body {
+  font-family: BorgiaPro-Regular, serif;
+  color: #8b8b8b;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
+/* line 27, stylesheets/_typography.sass */
+h1, h2 {
+  font-family: SofiaProLight, sans-serif;
+  color: #eeeeee;
+  background-color: #8b8b8b;
+  letter-spacing: -0.02em;
+}
+
+/* line 33, stylesheets/_typography.sass */
+h3, h4, h5, h6 {
+  font-family: BorgiaPro-Italic, serif;
+  font-weight: 300;
+}
+
+/* line 37, stylesheets/_typography.sass */
+a {
+  color: white;
+  font-weight: 300;
+}
+
+/* line 41, stylesheets/_typography.sass */
+a:hover,
+a:focus,
+a:active {
+  color: #c71100;
+}
+
+/* line 46, stylesheets/_typography.sass */
+p {
+  font-size: 110%;
+  line-height: 1.1em;
+  font-weight: 300;
+}
+
+/* line 1, stylesheets/_header.sass */
+header {
+  background-color: #8b8b8b;
+  color: #eeeeee;
+}
+/* line 4, stylesheets/_header.sass */
+header #main-logo {
+  background: 10px 20px url("BmoreUnsceneLogo.png") no-repeat;
+  min-height: 115px;
+  width: 400px;
+  display: block;
+  margin: 0.5em 0 0 0.5em;
+  padding: 2em 0 1em 7em;
+}
+/* line 11, stylesheets/_header.sass */
+header #main-logo h1 {
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 0.15em;
+}
+/* line 15, stylesheets/_header.sass */
+header #main-logo h1 #logo {
+  color: #eeeeee;
+}
+/* line 17, stylesheets/_header.sass */
+header #main-logo h4.subhead {
+  padding: -8em 0 1em 6em;
+  font-weight: 100;
+}
+/* line 22, stylesheets/_header.sass */
+header .nav-bar {
+  background: #8b8b8b;
+}
+/* line 24, stylesheets/_header.sass */
+header .nav-bar li {
+  border-color: #8b8b8b;
+  border-width: 0em;
+  box-shadow: none;
+}
+/* line 28, stylesheets/_header.sass */
+header .nav-bar li a {
+  border-left: 0.1rem solid white;
+  color: #8b8b8b;
+}
+/* line 31, stylesheets/_header.sass */
+header .nav-bar li a:first-child {
+  font-size: 1.2em;
+  padding: 0 15px;
+}
+/* line 35, stylesheets/_header.sass */
+header .nav-bar li a:focus {
+  color: #494949;
+}
+/* line 37, stylesheets/_header.sass */
+header .nav-bar .active {
+  background: #494949;
+  border-color: #8b8b8b;
+  color: #525252;
+}
+/* line 41, stylesheets/_header.sass */
+header .nav-bar .active:hover {
+  background: #444444;
+  color: #333333;
+}
+
+/* Phone to Tablet */
+@media only screen and (max-width: 767px) {
+  /* line 7, stylesheets/_media-queries.sass */
+  header {
+    min-width: 100%;
+    max-height: 55px;
+  }
+  /* line 10, stylesheets/_media-queries.sass */
+  header #main-logo {
+    background: none;
+    width: 100%;
+    min-height: 50px;
+    padding: 1.7em 3em 0 3em;
+  }
+  /* line 15, stylesheets/_media-queries.sass */
+  header #main-logo h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.8em;
+    letter-spacing: -0.02em;
+    margin: 0px;
+  }
+  /* line 21, stylesheets/_media-queries.sass */
+  header #main-logo h1 #logo {
+    color: #eeeeee;
+  }
+  /* line 23, stylesheets/_media-queries.sass */
+  header #main-logo h4.subhead {
+    display: none;
+  }
+  /* line 27, stylesheets/_media-queries.sass */
+  header .button {
+    margin: 0.5em;
+    border: 0.1em solid white;
+    background-color: #8b8b8b;
+    color: white;
+    box-shadow: none;
+    background: none;
+  }
+  /* line 34, stylesheets/_media-queries.sass */
+  header .button:hover {
+    border: 0.1em solid white;
+    background-color: #494949;
+    color: white;
+  }
+  /* line 38, stylesheets/_media-queries.sass */
+  header .button:focus {
+    box-shadow: none;
+    border: 0.1em solid white;
+  }
+  /* line 43, stylesheets/_media-queries.sass */
+  header .mobile-nav-container {
+    top: 68px;
+    width: 50%;
+    background-color: #8b8b8b;
+    color: #f7f7f7;
+    box-shadow: -5px 0px 2px #333333 inset;
+    border-right: 2px solid #f7f7f7;
+  }
+  /* line 50, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical {
+    margin-bottom: 0px;
+  }
+  /* line 52, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li {
+    border: 0px none;
+    box-shadow: -5px 0px 2px #333333 inset;
+  }
+  /* line 55, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li a {
+    font-size: 16px;
+    box-shadow: -5px 0px 2px #333333 inset;
+    color: #f7f7f7;
+    background: 0 no-repeat #494949;
+  }
+  /* line 60, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li a:hover {
+    box-shadow: -5px 0px 2px #333333 inset;
+    background: #444444;
+    color: white;
+  }
+  /* line 64, stylesheets/_media-queries.sass */
+  header .mobile-nav-container ul.tabs.vertical li.active {
+    background: #444444;
+  }
+}
+/* Tablet to Screen */
+@media (max-width: 767) and (max-width: 1023) {
+  /* line 73, stylesheets/_media-queries.sass */
+  header #main-logo {
+    width: 200px;
+  }
+  /* line 75, stylesheets/_media-queries.sass */
+  header #main-logo h1 {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1em;
+  }
+}
+/* line 1, stylesheets/_homepage.sass */
+.caption-container {
+  display: block;
+  background-color: #494949;
+  opacity: 0.8;
+  width: 30em;
+  height: 15em;
+  top: 1em;
+  left: 0.5em;
+  position: relative;
+}
+
+/* line 13, stylesheets/_homepage.sass */
+#featured h3 {
+  width: 80%;
+  font-size: 2.5em;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 0em;
+}
+/* line 19, stylesheets/_homepage.sass */
+#featured p {
+  width: 80%;
+  padding-left: 1.5em;
+}
+
+/* line 20, stylesheets/style.sass */
+.button {
+  background: #8b8b8b;
+  border: 0.1em solid #f7f7f7;
+  font-family: BorgiaPro-Italic, serif;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+/* line 27, stylesheets/style.sass */
+.button:hover {
+  background-color: #c71100;
+}
+
+/* line 30, stylesheets/style.sass */
+.button:focus {
+  box-shadow: 0px 0px 2px white inset;
+}

@@ -45,6 +45,7 @@
 
 <header id="masthead" class="site-header" role="banner">
 	<div class="container wrapper">
+		<div class="inner-wrapper">
 			<div class="nine columns alpha">
 						<div id="brand" class="two columns alpha">
 							<a href="<?php echo esc_url( home_url( '/' ) );?>">
@@ -66,6 +67,7 @@
 					</nav><!-- .site-navigation .main-navigation -->
 			</div>
 			<div class="clear"></div>
+		</div>
 	</div><!--/container -->
 		
 </header><!-- #masthead .site-header -->

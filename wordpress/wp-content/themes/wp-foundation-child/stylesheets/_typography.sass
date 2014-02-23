@@ -1,0 +1,50 @@
+@import compass/css3
+
++font-face("BorgiaPro-Regular", font-files("BorgiaPro-Regular-webfont.ttf", "BorgiaPro-Regular-webfont.woff", "BorgiaPro-Regular-webfont.eot", "BorgiaPro-Regular-webfont.svg"))
+
++font-face("BorgiaPro-Italic", font-files("BorgiaPro-Italic-webfont.ttf", "BorgiaPro-Italic-webfont.woff", "BorgiaPro-Italic-webfont.eot", "BorgiaPro-Italic-webfont.svg"))
+
++font-face("SofiaProLight", font-files("SofiaProLight-webfont.ttf", "SofiaProLight-webfont.woff", "SofiaProLight-webfont.eot", "SofiaProLight-webfont.svg"))
+
+$header-font: SofiaProLight, sans-serif
+$body-copy: BorgiaPro-Regular, serif
+$caption: BorgiaPro-Italic, serif
+$base-color: #8B8B8B
+$link-color: #c71100
+$header-text: #eeeeee
+$off-white: #F7F7F7
+$white: #FFFFFF
+$dark-grey: #494949
+$darker-grey: #444444
+
+
+Body
+  font-family: $body-copy
+  color: $base-color
+  background-color: $off-white
+  font-size: 16px
+
+h1,h2
+  font-family: $header-font
+  color: $header-text
+  background-color: $base-color
+  letter-spacing: -0.020em
+
+h3,h4,h5,h6
+  font-family: $caption
+  font-weight: 300
+
+a
+  color: $white
+  font-weight: 300
+
+a:hover,
+a:focus,
+a:active
+  color: $link-color
+
+p
+  font-size: 110%
+  line-height: 1.1em
+  font-weight: 300
+
