@@ -234,24 +234,25 @@ header .nav-bar .active:hover {
 .caption-container {
   display: block;
   background-color: #494949;
-  opacity: 0.9;
-  width: 350px;
-  min-height: 250px;
-  padding: 0.025em;
+  opacity: 0.8;
+  width: 30em;
+  height: 15em;
   top: 1em;
   left: 0.5em;
   position: relative;
-  z-index: 5;
 }
 
-/* line 15, stylesheets/_homepage.sass */
+/* line 13, stylesheets/_homepage.sass */
 #featured h3 {
-  font-size: 3em;
+  width: 80%;
+  font-size: 2.5em;
   padding-left: 0.5em;
-  margin-top: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 0em;
 }
 /* line 19, stylesheets/_homepage.sass */
 #featured p {
+  width: 80%;
   padding-left: 1.5em;
 }
 

@@ -29,8 +29,8 @@
       directionalNav: false,         // manual advancing directional navs
       directionalNavRightText: 'Right', // text of right directional element for accessibility
       directionalNavLeftText: 'Left', // text of left directional element for accessibility
-      captions: false,           // do you want captions?
-      captionAnimation: 'fade',       // fade, slideOpen, none
+      captions: true,           // do you want captions?
+      captionAnimation: 'none',       // fade, slideOpen, none
       captionAnimationSpeed: 600,     // if so how quickly should they animate in
       resetTimerOnClick: false,      // true resets the timer instead of pausing slideshow progress on manual navigation
       bullets: false,           // true or false to activate the bullet navigation

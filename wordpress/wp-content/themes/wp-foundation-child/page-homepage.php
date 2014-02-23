@@ -35,7 +35,7 @@ Template Name: Homepage
 								
 								<div style="background-size:cover; background-image: url(<?php echo $featured_src[0]; ?>);">
 										<span class="caption-container">
-											<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+											<h3><?php the_title(); ?></h3>
 												<?php the_excerpt(); ?>
 											<p><a href="<?php the_permalink(); ?>" class="button">Read more »</a></p>
 										</span>

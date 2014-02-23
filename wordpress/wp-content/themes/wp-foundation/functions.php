@@ -571,6 +571,6 @@ add_action('save_post', 'save_homepage_meta');
 function custom_excerpt_length( $length ) {
     return 25;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 25 );
 
 ?>
