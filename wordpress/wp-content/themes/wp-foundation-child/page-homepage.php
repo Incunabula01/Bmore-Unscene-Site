@@ -62,9 +62,26 @@ Template Name: Homepage
 
 						<section class="row post_content">
 						
-							<div class="home-main eight columns">
+							<div class="home-main twelve columns">
 						
-								<?php the_content(); ?>
+								<?php
+								 $postslist = get_posts('numberposts=5');
+								 foreach ($postslist as $post) :
+								    setup_postdata($post);
+								 ?>
+									<div class="post eight columns">
+										<h2>
+											<?php the_title(); ?>
+										</h2>
+										<?php the_excerpt() ?>
+									</div>
+									<div class="post-image four columns">
+										<a href="<?php the_permalink();?>">
+											<?php the_post_thumbnail('bones-thumb-300');
+										 	?>
+										</a>
+									</div>
+								<?php endforeach ?>
 								
 							</div>
 							<div class="four columns">

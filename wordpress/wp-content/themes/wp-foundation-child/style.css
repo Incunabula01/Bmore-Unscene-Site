@@ -36,30 +36,29 @@ Body {
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #eeeeee;
-  background-color: #8b8b8b;
   letter-spacing: -0.02em;
 }
 
-/* line 33, stylesheets/_typography.sass */
+/* line 32, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
   font-weight: 300;
 }
 
-/* line 37, stylesheets/_typography.sass */
+/* line 36, stylesheets/_typography.sass */
 a {
   color: white;
   font-weight: 300;
 }
 
-/* line 41, stylesheets/_typography.sass */
+/* line 40, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
   color: #c71100;
 }
 
-/* line 46, stylesheets/_typography.sass */
+/* line 45, stylesheets/_typography.sass */
 p {
   font-size: 110%;
   line-height: 1.1em;
@@ -236,7 +235,7 @@ header .nav-bar .active:hover {
   background-color: #494949;
   opacity: 0.8;
   width: 30em;
-  height: 15em;
+  height: 16em;
   top: 1em;
   left: 0.5em;
   position: relative;
@@ -254,6 +253,28 @@ header .nav-bar .active:hover {
 #featured p {
   width: 80%;
   padding-left: 1.5em;
+}
+
+/* line 24, stylesheets/_homepage.sass */
+.home-main .post {
+  height: 12em;
+  padding: 0.5em;
+}
+/* line 27, stylesheets/_homepage.sass */
+.home-main .post h2 {
+  height: 1.2em;
+  margin-top: 0;
+  color: #494949;
+  background-color: none;
+  border-bottom: 0.1em solid #494949;
+}
+/* line 33, stylesheets/_homepage.sass */
+.home-main .post p {
+  overflow: hidden;
+}
+/* line 35, stylesheets/_homepage.sass */
+.home-main .post-image {
+  top: 0.5em;
 }
 
 /* line 20, stylesheets/style.sass */

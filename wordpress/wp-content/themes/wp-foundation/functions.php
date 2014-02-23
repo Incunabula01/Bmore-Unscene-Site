@@ -36,7 +36,7 @@ add_filter('admin_footer_text', 'bones_custom_admin_footer');
 add_image_size( 'wpf-featured', 639, 300, true );
 add_image_size ( 'wpf-home-featured', 970, 364, true );
 add_image_size( 'bones-thumb-600', 600, 150, false );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'bones-thumb-300', 300, 200, true );
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
@@ -569,7 +569,7 @@ function save_homepage_meta($post_id) {
 add_action('save_post', 'save_homepage_meta');  
 
 function custom_excerpt_length( $length ) {
-    return 25;
+    return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 25 );
 
