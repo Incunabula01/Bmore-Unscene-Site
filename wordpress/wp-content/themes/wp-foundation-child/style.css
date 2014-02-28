@@ -151,16 +151,17 @@ header .nav-bar .active:hover {
     font-size: 1.8em;
     letter-spacing: -0.02em;
     margin: 0px;
+    overflow: hidden;
   }
-  /* line 21, stylesheets/_media-queries.sass */
+  /* line 22, stylesheets/_media-queries.sass */
   header #main-logo h1 #logo {
     color: #eeeeee;
   }
-  /* line 23, stylesheets/_media-queries.sass */
+  /* line 24, stylesheets/_media-queries.sass */
   header #main-logo h4.subhead {
     display: none;
   }
-  /* line 27, stylesheets/_media-queries.sass */
+  /* line 28, stylesheets/_media-queries.sass */
   header .button {
     margin: 0.5em;
     border: 0.1em solid white;
@@ -169,18 +170,18 @@ header .nav-bar .active:hover {
     box-shadow: none;
     background: none;
   }
-  /* line 34, stylesheets/_media-queries.sass */
+  /* line 35, stylesheets/_media-queries.sass */
   header .button:hover {
     border: 0.1em solid white;
     background-color: #494949;
     color: white;
   }
-  /* line 38, stylesheets/_media-queries.sass */
+  /* line 39, stylesheets/_media-queries.sass */
   header .button:focus {
     box-shadow: none;
     border: 0.1em solid white;
   }
-  /* line 43, stylesheets/_media-queries.sass */
+  /* line 44, stylesheets/_media-queries.sass */
   header .mobile-nav-container {
     top: 68px;
     width: 50%;
@@ -189,40 +190,40 @@ header .nav-bar .active:hover {
     box-shadow: -5px 0px 2px #333333 inset;
     border-right: 2px solid #f7f7f7;
   }
-  /* line 50, stylesheets/_media-queries.sass */
+  /* line 51, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical {
     margin-bottom: 0px;
   }
-  /* line 52, stylesheets/_media-queries.sass */
+  /* line 53, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li {
     border: 0px none;
     box-shadow: -5px 0px 2px #333333 inset;
   }
-  /* line 55, stylesheets/_media-queries.sass */
+  /* line 56, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a {
     font-size: 16px;
     box-shadow: -5px 0px 2px #333333 inset;
     color: #f7f7f7;
     background: 0 no-repeat #494949;
   }
-  /* line 60, stylesheets/_media-queries.sass */
+  /* line 61, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a:hover {
     box-shadow: -5px 0px 2px #333333 inset;
     background: #444444;
     color: white;
   }
-  /* line 64, stylesheets/_media-queries.sass */
+  /* line 65, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li.active {
     background: #444444;
   }
 }
 /* Tablet to Screen */
 @media (max-width: 767) and (max-width: 1023) {
-  /* line 73, stylesheets/_media-queries.sass */
+  /* line 74, stylesheets/_media-queries.sass */
   header #main-logo {
     width: 200px;
   }
-  /* line 75, stylesheets/_media-queries.sass */
+  /* line 76, stylesheets/_media-queries.sass */
   header #main-logo h1 {
     font-size: 1em;
     font-weight: 100;

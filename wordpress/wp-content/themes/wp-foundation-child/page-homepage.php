@@ -74,6 +74,7 @@ Template Name: Homepage
 											<?php the_title(); ?>
 										</h2>
 										<?php the_excerpt() ?>
+										<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
 									</div>
 									<div class="post-image four columns">
 										<a href="<?php the_permalink();?>">

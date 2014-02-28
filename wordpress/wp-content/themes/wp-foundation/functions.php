@@ -36,7 +36,7 @@ add_filter('admin_footer_text', 'bones_custom_admin_footer');
 add_image_size( 'wpf-featured', 639, 300, true );
 add_image_size ( 'wpf-home-featured', 970, 364, true );
 add_image_size( 'bones-thumb-600', 600, 150, false );
-add_image_size( 'bones-thumb-300', 300, 200, true );
+add_image_size( 'bones-thumb-300', 500, 300, true );
 /* 
 to add more sizes, simply copy a line from above 
 and change the dimensions & name. As long as you
