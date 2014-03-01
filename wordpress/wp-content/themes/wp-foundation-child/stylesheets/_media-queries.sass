@@ -11,13 +11,14 @@ $box-border: 0.1em solid $white
 			background: none
 			width: 100%
 			min-height: 50px
+			padding: 1.7em 3em 0 3em 
 			h1
 				text-align: center
 				font-weight: 300
-				font-size: 1.2em
+				font-size: 1.8em
 				letter-spacing: -0.020em
 				margin: 0px
-				text-overflow: hidden
+				overflow: hidden
 				#logo
 					color: $header-text
 			h4.subhead 
@@ -63,47 +64,19 @@ $box-border: 0.1em solid $white
 						color: $white
 				li.active
 					background: $darker-grey
-	div.orbit-wrapper
-		display: none
-		div.orbit-slide
-			display: none
-	.home-main
-		overflow: hidden
-		min-height: 25em
-		.post
-			height: 20em
-			padding: 0.5em
-			.button
-				width: 100%
-				text-align: center
-		.post-image
-			top: 0.5em
-			
+
 
 
 /* Tablet to Screen */
 
-@media only screen and (max-width:768px) and (max-width: 1023px)
+@media (max-width:767) and (max-width: 1023)
 	header
 		#main-logo
-			width: 300px
-			margin: 0.5em 0 0 0.5em
-			padding: 1em 0 0.5em 7em
-			h4.subhead 
-				font-size: 1.5em
-				padding: -9em 0 1em 6em
-
-	.home-main
-		overflow: hidden
-		min-height: 10em
-		.post
-			height: 22em
-			h2
-				font-size: 1.5em
-				height: 2em
-			p
-				overflow: hidden
-
+			width: 200px
+			h1
+				font-size: 1em
+				font-weight: 100
+				line-height: 1em
       			
 
 

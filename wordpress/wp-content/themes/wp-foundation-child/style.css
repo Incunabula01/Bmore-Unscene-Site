@@ -66,16 +66,11 @@ p {
 }
 
 /* line 1, stylesheets/_header.sass */
-.container {
-  height: 100%;
-}
-
-/* line 4, stylesheets/_header.sass */
 header {
   background-color: #8b8b8b;
   color: #eeeeee;
 }
-/* line 7, stylesheets/_header.sass */
+/* line 4, stylesheets/_header.sass */
 header #main-logo {
   background: 10px 20px url("BmoreUnsceneLogo.png") no-repeat;
   min-height: 115px;
@@ -84,52 +79,52 @@ header #main-logo {
   margin: 0.5em 0 0 0.5em;
   padding: 2em 0 1em 7em;
 }
-/* line 14, stylesheets/_header.sass */
+/* line 11, stylesheets/_header.sass */
 header #main-logo h1 {
   font-size: 2em;
   font-weight: 100;
   line-height: 0.15em;
 }
-/* line 18, stylesheets/_header.sass */
+/* line 15, stylesheets/_header.sass */
 header #main-logo h1 #logo {
   color: #eeeeee;
 }
-/* line 20, stylesheets/_header.sass */
+/* line 17, stylesheets/_header.sass */
 header #main-logo h4.subhead {
   padding: -8em 0 1em 6em;
   font-weight: 100;
 }
-/* line 25, stylesheets/_header.sass */
+/* line 22, stylesheets/_header.sass */
 header .nav-bar {
   background: #8b8b8b;
 }
-/* line 27, stylesheets/_header.sass */
+/* line 24, stylesheets/_header.sass */
 header .nav-bar li {
   border-color: #8b8b8b;
   border-width: 0em;
   box-shadow: none;
 }
-/* line 31, stylesheets/_header.sass */
+/* line 28, stylesheets/_header.sass */
 header .nav-bar li a {
   border-left: 0.1rem solid white;
   color: #8b8b8b;
 }
-/* line 34, stylesheets/_header.sass */
+/* line 31, stylesheets/_header.sass */
 header .nav-bar li a:first-child {
   font-size: 1.2em;
   padding: 0 15px;
 }
-/* line 38, stylesheets/_header.sass */
+/* line 35, stylesheets/_header.sass */
 header .nav-bar li a:focus {
   color: #494949;
 }
-/* line 40, stylesheets/_header.sass */
+/* line 37, stylesheets/_header.sass */
 header .nav-bar .active {
   background: #494949;
   border-color: #8b8b8b;
   color: #525252;
 }
-/* line 44, stylesheets/_header.sass */
+/* line 41, stylesheets/_header.sass */
 header .nav-bar .active:hover {
   background: #444444;
   color: #333333;
@@ -147,25 +142,26 @@ header .nav-bar .active:hover {
     background: none;
     width: 100%;
     min-height: 50px;
+    padding: 1.7em 3em 0 3em;
   }
-  /* line 14, stylesheets/_media-queries.sass */
+  /* line 15, stylesheets/_media-queries.sass */
   header #main-logo h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.8em;
     letter-spacing: -0.02em;
     margin: 0px;
-    text-overflow: hidden;
+    overflow: hidden;
   }
-  /* line 21, stylesheets/_media-queries.sass */
+  /* line 22, stylesheets/_media-queries.sass */
   header #main-logo h1 #logo {
     color: #eeeeee;
   }
-  /* line 23, stylesheets/_media-queries.sass */
+  /* line 24, stylesheets/_media-queries.sass */
   header #main-logo h4.subhead {
     display: none;
   }
-  /* line 27, stylesheets/_media-queries.sass */
+  /* line 28, stylesheets/_media-queries.sass */
   header .button {
     margin: 0.5em;
     border: 0.1em solid white;
@@ -174,18 +170,18 @@ header .nav-bar .active:hover {
     box-shadow: none;
     background: none;
   }
-  /* line 34, stylesheets/_media-queries.sass */
+  /* line 35, stylesheets/_media-queries.sass */
   header .button:hover {
     border: 0.1em solid white;
     background-color: #494949;
     color: white;
   }
-  /* line 38, stylesheets/_media-queries.sass */
+  /* line 39, stylesheets/_media-queries.sass */
   header .button:focus {
     box-shadow: none;
     border: 0.1em solid white;
   }
-  /* line 43, stylesheets/_media-queries.sass */
+  /* line 44, stylesheets/_media-queries.sass */
   header .mobile-nav-container {
     top: 68px;
     width: 50%;
@@ -194,93 +190,44 @@ header .nav-bar .active:hover {
     box-shadow: -5px 0px 2px #333333 inset;
     border-right: 2px solid #f7f7f7;
   }
-  /* line 50, stylesheets/_media-queries.sass */
+  /* line 51, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical {
     margin-bottom: 0px;
   }
-  /* line 52, stylesheets/_media-queries.sass */
+  /* line 53, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li {
     border: 0px none;
     box-shadow: -5px 0px 2px #333333 inset;
   }
-  /* line 55, stylesheets/_media-queries.sass */
+  /* line 56, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a {
     font-size: 16px;
     box-shadow: -5px 0px 2px #333333 inset;
     color: #f7f7f7;
     background: 0 no-repeat #494949;
   }
-  /* line 60, stylesheets/_media-queries.sass */
+  /* line 61, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a:hover {
     box-shadow: -5px 0px 2px #333333 inset;
     background: #444444;
     color: white;
   }
-  /* line 64, stylesheets/_media-queries.sass */
+  /* line 65, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li.active {
     background: #444444;
   }
-
-  /* line 66, stylesheets/_media-queries.sass */
-  div.orbit-wrapper {
-    display: none;
-  }
-  /* line 68, stylesheets/_media-queries.sass */
-  div.orbit-wrapper div.orbit-slide {
-    display: none;
-  }
-
-  /* line 70, stylesheets/_media-queries.sass */
-  .home-main {
-    overflow: hidden;
-    min-height: 25em;
-  }
-  /* line 73, stylesheets/_media-queries.sass */
-  .home-main .post {
-    height: 20em;
-    padding: 0.5em;
-  }
-  /* line 76, stylesheets/_media-queries.sass */
-  .home-main .post .button {
-    width: 100%;
-    text-align: center;
-  }
-  /* line 79, stylesheets/_media-queries.sass */
-  .home-main .post-image {
-    top: 0.5em;
-  }
 }
 /* Tablet to Screen */
-@media only screen and (max-width: 768px) and (max-width: 1023px) {
-  /* line 88, stylesheets/_media-queries.sass */
+@media (max-width: 767) and (max-width: 1023) {
+  /* line 74, stylesheets/_media-queries.sass */
   header #main-logo {
-    width: 300px;
-    margin: 0.5em 0 0 0.5em;
-    padding: 1em 0 0.5em 7em;
+    width: 200px;
   }
-  /* line 92, stylesheets/_media-queries.sass */
-  header #main-logo h4.subhead {
-    font-size: 1.5em;
-    padding: -9em 0 1em 6em;
-  }
-
-  /* line 96, stylesheets/_media-queries.sass */
-  .home-main {
-    overflow: hidden;
-    min-height: 10em;
-  }
-  /* line 99, stylesheets/_media-queries.sass */
-  .home-main .post {
-    height: 22em;
-  }
-  /* line 101, stylesheets/_media-queries.sass */
-  .home-main .post h2 {
-    font-size: 1.5em;
-    height: 2em;
-  }
-  /* line 104, stylesheets/_media-queries.sass */
-  .home-main .post p {
-    overflow: hidden;
+  /* line 76, stylesheets/_media-queries.sass */
+  header #main-logo h1 {
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1em;
   }
 }
 /* line 1, stylesheets/_homepage.sass */
@@ -309,17 +256,12 @@ header .nav-bar .active:hover {
   padding-left: 1.5em;
 }
 
-/* line 23, stylesheets/_homepage.sass */
-.home-main {
-  overflow: hidden;
-  min-height: 56em;
-}
-/* line 26, stylesheets/_homepage.sass */
+/* line 24, stylesheets/_homepage.sass */
 .home-main .post {
-  min-height: 20em;
+  height: 12em;
   padding: 0.5em;
 }
-/* line 29, stylesheets/_homepage.sass */
+/* line 27, stylesheets/_homepage.sass */
 .home-main .post h2 {
   height: 1.2em;
   margin-top: 0;
@@ -327,14 +269,13 @@ header .nav-bar .active:hover {
   background-color: none;
   border-bottom: 0.1em solid #494949;
 }
+/* line 33, stylesheets/_homepage.sass */
+.home-main .post p {
+  overflow: hidden;
+}
 /* line 35, stylesheets/_homepage.sass */
 .home-main .post-image {
   top: 0.5em;
-}
-/* line 37, stylesheets/_homepage.sass */
-.home-main .post-image img {
-  width: 100%;
-  height: 25%;
 }
 
 /* line 20, stylesheets/style.sass */
