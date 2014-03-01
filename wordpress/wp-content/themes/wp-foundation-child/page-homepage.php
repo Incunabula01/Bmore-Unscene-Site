@@ -51,7 +51,7 @@ Template Name: Homepage
 						<script type="text/javascript">
 						   $(window).load(function() {
 						       $('#featured').orbit({ 
-						       	fluid: '16x6'
+						       	fluid: '16x4'
 						       });
 						   });
 						</script>
@@ -65,7 +65,7 @@ Template Name: Homepage
 							<div class="home-main twelve columns">
 						
 								<?php
-								 $postslist = get_posts('numberposts=5');
+								 $postslist = get_posts('numberposts=6');
 								 foreach ($postslist as $post) :
 								    setup_postdata($post);
 								 ?>
@@ -73,7 +73,7 @@ Template Name: Homepage
 										<h2>
 											<?php the_title(); ?>
 										</h2>
-										<?php the_excerpt() ?>
+										<?php the_content() ?>
 										<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
 									</div>
 									<div class="post-image four columns">
@@ -83,12 +83,7 @@ Template Name: Homepage
 										</a>
 									</div>
 								<?php endforeach ?>
-								
-							</div>
-							<div class="four columns">
-								
-							
-													
+							</div>						
 						</section> <!-- end article header -->
 						
 						<footer>
