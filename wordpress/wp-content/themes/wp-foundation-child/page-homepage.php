@@ -26,7 +26,7 @@ Template Name: Homepage
 								<?php
 									global $post;
 									$tmp_post = $post;
-									$args = array( 'numberposts' => 5 );
+									$args = array( 'numberposts' => 6 );
 									$myposts = get_posts( $args );
 									foreach( $myposts as $post ) :	setup_postdata($post); 
 										$post_thumbnail_id = get_post_thumbnail_id($post_id);
@@ -51,7 +51,7 @@ Template Name: Homepage
 						<script type="text/javascript">
 						   $(window).load(function() {
 						       $('#featured').orbit({ 
-						       	fluid: '16x6'
+						       	fluid: '16x7'
 						       });
 						   });
 						</script>
@@ -69,6 +69,13 @@ Template Name: Homepage
 								 foreach ($postslist as $post) :
 								    setup_postdata($post);
 								 ?>
+									<div class="post-image four columns">
+										<a href="<?php the_permalink();?>">
+											<?php 
+												the_post_thumbnail('bones-thumb-300');
+										 	?>
+										</a>
+									</div>
 									<div class="post eight columns">
 										<h2>
 											<?php the_title(); ?>
@@ -76,16 +83,10 @@ Template Name: Homepage
 										<?php the_excerpt() ?>
 										<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
 									</div>
-									<div class="post-image four columns">
-										<a href="<?php the_permalink();?>">
-											<?php the_post_thumbnail('bones-thumb-300');
-										 	?>
-										</a>
-									</div>
+									
 								<?php endforeach ?>
 								
 							</div>
-							<div class="four columns">
 								
 							
 													

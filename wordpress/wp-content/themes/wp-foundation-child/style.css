@@ -136,22 +136,22 @@ header .nav-bar .active:hover {
   header {
     min-width: 100%;
     max-height: 55px;
+    z-index: 5;
   }
-  /* line 10, stylesheets/_media-queries.sass */
+  /* line 11, stylesheets/_media-queries.sass */
   header #main-logo {
     background: none;
     width: 100%;
     min-height: 50px;
     padding: 1.7em 3em 0 3em;
   }
-  /* line 15, stylesheets/_media-queries.sass */
+  /* line 16, stylesheets/_media-queries.sass */
   header #main-logo h1 {
     text-align: center;
     font-weight: 300;
     font-size: 1.8em;
     letter-spacing: -0.02em;
     margin: 0px;
-    overflow: hidden;
   }
   /* line 22, stylesheets/_media-queries.sass */
   header #main-logo h1 #logo {
@@ -216,14 +216,33 @@ header .nav-bar .active:hover {
   header .mobile-nav-container ul.tabs.vertical li.active {
     background: #444444;
   }
+
+  /* line 68, stylesheets/_media-queries.sass */
+  div.orbit-wrapper {
+    display: none;
+  }
+  /* line 70, stylesheets/_media-queries.sass */
+  div.orbit-wrapper div.orbit-slide {
+    display: none;
+  }
+
+  /* line 73, stylesheets/_media-queries.sass */
+  .home-main {
+    overflow: hidden;
+  }
+  /* line 76, stylesheets/_media-queries.sass */
+  .home-main .post .button {
+    width: 100%;
+    text-align: center;
+  }
 }
 /* Tablet to Screen */
 @media (max-width: 767) and (max-width: 1023) {
-  /* line 74, stylesheets/_media-queries.sass */
+  /* line 86, stylesheets/_media-queries.sass */
   header #main-logo {
     width: 200px;
   }
-  /* line 76, stylesheets/_media-queries.sass */
+  /* line 88, stylesheets/_media-queries.sass */
   header #main-logo h1 {
     font-size: 1em;
     font-weight: 100;

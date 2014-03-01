@@ -7,6 +7,7 @@ $box-border: 0.1em solid $white
 	header
 		min-width: 100%
 		max-height: 55px
+		z-index: 5
 		#main-logo
 			background: none
 			width: 100%
@@ -18,7 +19,6 @@ $box-border: 0.1em solid $white
 				font-size: 1.8em
 				letter-spacing: -0.020em
 				margin: 0px
-				overflow: hidden
 				#logo
 					color: $header-text
 			h4.subhead 
@@ -64,6 +64,18 @@ $box-border: 0.1em solid $white
 						color: $white
 				li.active
 					background: $darker-grey
+
+	div.orbit-wrapper
+		display: none
+		div.orbit-slide
+			display: none
+
+	.home-main
+		overflow: hidden
+		.post
+			.button
+				width: 100%
+				text-align: center
 
 
 
