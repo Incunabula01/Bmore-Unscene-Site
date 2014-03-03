@@ -76,7 +76,7 @@ Template Name: Homepage
 										 	?>
 										</a>
 									</div>
-									<div class="post eight columns">
+									<div class="post seven columns">
 										<h2>
 											<?php the_title(); ?>
 										</h2>
