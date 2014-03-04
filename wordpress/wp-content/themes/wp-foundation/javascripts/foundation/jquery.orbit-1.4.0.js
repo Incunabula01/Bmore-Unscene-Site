@@ -39,7 +39,7 @@
       afterSlideChange: $.noop,   // empty function
       afterLoadComplete: $.noop, //callback to execute after everything has been loaded
       fluid: true,
-      centerBullets: true    // center bullet nav with js, turn this off if you want to position the bullet nav manually
+      centerBullets: false    // center bullet nav with js, turn this off if you want to position the bullet nav manually
     },
 
     activeSlide: 0,

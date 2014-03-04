@@ -36,31 +36,32 @@ Body {
 h1, h2 {
   font-family: SofiaProLight, sans-serif;
   color: #eeeeee;
+  font-size: 3.2em;
   letter-spacing: -0.02em;
 }
 
-/* line 32, stylesheets/_typography.sass */
+/* line 33, stylesheets/_typography.sass */
 h3, h4, h5, h6 {
   font-family: BorgiaPro-Italic, serif;
   font-weight: 300;
 }
 
-/* line 36, stylesheets/_typography.sass */
+/* line 37, stylesheets/_typography.sass */
 a {
   color: white;
-  font-weight: 300;
+  font-weight: 600;
 }
 
-/* line 40, stylesheets/_typography.sass */
+/* line 41, stylesheets/_typography.sass */
 a:hover,
 a:focus,
 a:active {
   color: #c71100;
 }
 
-/* line 45, stylesheets/_typography.sass */
+/* line 46, stylesheets/_typography.sass */
 p {
-  font-size: 110%;
+  font-size: 1.4em;
   line-height: 1.1em;
   font-weight: 300;
 }
@@ -126,11 +127,11 @@ header .nav-bar li a:first-child {
 }
 /* line 40, stylesheets/_header.sass */
 header .nav-bar li a:focus {
-  color: #494949;
+  color: #6d6d6d;
 }
 /* line 42, stylesheets/_header.sass */
 header .nav-bar .active {
-  background: #494949;
+  background: #6d6d6d;
   border-color: #8b8b8b;
   color: #525252;
 }
@@ -187,7 +188,7 @@ header .nav-bar .active:hover {
   /* line 36, stylesheets/_media-queries.sass */
   header .button:hover {
     border: 0.1em solid white;
-    background-color: #494949;
+    background-color: #6d6d6d;
     color: white;
   }
   /* line 40, stylesheets/_media-queries.sass */
@@ -198,74 +199,87 @@ header .nav-bar .active:hover {
   /* line 45, stylesheets/_media-queries.sass */
   header .mobile-nav-container {
     top: 68px;
-    width: 50%;
-    background-color: #8b8b8b;
+    width: 52%;
+    background-color: #444444;
     color: #f7f7f7;
     box-shadow: -5px 0px 2px #333333 inset;
     border-right: 2px solid #f7f7f7;
     -webkit-transition: all 0.25s ease-in 0s;
+    height: 9000px;
+    color: #444444;
   }
-  /* line 53, stylesheets/_media-queries.sass */
+  /* line 55, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical {
     margin-bottom: 0px;
   }
-  /* line 55, stylesheets/_media-queries.sass */
+  /* line 57, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li {
     border: 0px none;
     box-shadow: -5px 0px 2px #333333 inset;
   }
-  /* line 58, stylesheets/_media-queries.sass */
+  /* line 60, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a {
+    border-right: 0px;
     font-size: 16px;
     box-shadow: -5px 0px 2px #333333 inset;
     color: #f7f7f7;
-    background: 0 no-repeat #494949;
+    background: 0 no-repeat #6d6d6d;
   }
-  /* line 63, stylesheets/_media-queries.sass */
+  /* line 66, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li a:hover {
     box-shadow: -5px 0px 2px #333333 inset;
     background: #444444;
     color: white;
   }
-  /* line 67, stylesheets/_media-queries.sass */
+  /* line 70, stylesheets/_media-queries.sass */
   header .mobile-nav-container ul.tabs.vertical li.active {
     background: #444444;
   }
 
-  /* line 70, stylesheets/_media-queries.sass */
+  /* line 73, stylesheets/_media-queries.sass */
   div.orbit-wrapper {
     display: none;
   }
-  /* line 72, stylesheets/_media-queries.sass */
-  div.orbit-wrapper div.orbit-slide {
+  /* line 75, stylesheets/_media-queries.sass */
+  div.orbit-wrapper #featured {
+    display: none;
+  }
+  /* line 77, stylesheets/_media-queries.sass */
+  div.orbit-wrapper #featured div.orbit-slide {
     display: none;
   }
 
-  /* line 74, stylesheets/_media-queries.sass */
+  /* line 80, stylesheets/_media-queries.sass */
   .active #main {
     margin-right: -90%;
+    overflow-x: hidden;
   }
 
-  /* line 76, stylesheets/_media-queries.sass */
+  /* line 83, stylesheets/_media-queries.sass */
   #main {
     height: 100%;
     position: relative;
     z-index: 1002;
     -webkit-transition: all 0.25s ease-in 0s;
+    padding: 0px;
   }
-  /* line 82, stylesheets/_media-queries.sass */
-  #main .post .button {
+  /* line 90, stylesheets/_media-queries.sass */
+  #main .home-main .post-image {
+    top: 0.8em;
+  }
+  /* line 93, stylesheets/_media-queries.sass */
+  #main .home-main .post .button {
     width: 100%;
     text-align: center;
   }
 }
 /* Tablet to Screen */
 @media (max-width: 767) and (max-width: 1023) {
-  /* line 92, stylesheets/_media-queries.sass */
+  /* line 103, stylesheets/_media-queries.sass */
   header #main-logo {
     width: 200px;
   }
-  /* line 94, stylesheets/_media-queries.sass */
+  /* line 105, stylesheets/_media-queries.sass */
   header #main-logo h1 {
     font-size: 1em;
     font-weight: 100;
@@ -275,49 +289,50 @@ header .nav-bar .active:hover {
 /* line 1, stylesheets/_homepage.sass */
 .caption-container {
   display: block;
-  background-color: #494949;
-  opacity: 0.8;
+  background-color: #6d6d6d;
+  opacity: 0.9;
   width: 30em;
-  height: 16em;
-  top: 1em;
+  height: 21em;
+  top: 1.3em;
   left: 0.5em;
   position: relative;
 }
 
-/* line 13, stylesheets/_homepage.sass */
+/* line 12, stylesheets/_homepage.sass */
+#featured {
+  opacity: 1;
+}
+/* line 14, stylesheets/_homepage.sass */
 #featured h3 {
+  color: white;
   width: 80%;
-  font-size: 2.5em;
-  padding-left: 0.5em;
-  padding-top: 0.5em;
+  font-size: 2.8em;
+  padding-left: 0.8em;
+  padding-top: 0.8em;
   margin-top: 0em;
 }
-/* line 19, stylesheets/_homepage.sass */
+/* line 21, stylesheets/_homepage.sass */
 #featured p {
-  width: 80%;
+  width: 90%;
   padding-left: 1.5em;
 }
 
-/* line 24, stylesheets/_homepage.sass */
-.home-main .post {
-  height: 12em;
-  padding: 0.5em;
-}
-/* line 27, stylesheets/_homepage.sass */
-.home-main .post h2 {
-  height: 1.2em;
-  margin-top: 0;
-  color: #494949;
-  background-color: none;
-  border-bottom: 0.1em solid #494949;
-}
-/* line 33, stylesheets/_homepage.sass */
-.home-main .post p {
-  overflow: hidden;
-}
-/* line 35, stylesheets/_homepage.sass */
+/* line 26, stylesheets/_homepage.sass */
 .home-main .post-image {
   top: 0.5em;
+}
+/* line 29, stylesheets/_homepage.sass */
+.home-main .post-image .post h2 {
+  height: 1.2em;
+  margin-top: 0;
+  color: #6d6d6d;
+  background-color: none;
+  border-bottom: 0.025em solid #6d6d6d;
+  bottom: 0.25em;
+}
+/* line 36, stylesheets/_homepage.sass */
+.home-main .post-image .post p {
+  overflow: hidden;
 }
 
 /* line 20, stylesheets/style.sass */
@@ -337,4 +352,9 @@ header .nav-bar .active:hover {
 /* line 30, stylesheets/style.sass */
 .button:focus {
   box-shadow: 0px 0px 2px white inset;
+}
+
+/* line 33, stylesheets/style.sass */
+#content {
+  height: 100%;
 }

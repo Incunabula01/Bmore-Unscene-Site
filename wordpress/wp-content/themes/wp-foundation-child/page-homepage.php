@@ -36,7 +36,7 @@ Template Name: Homepage
 								<div style="background-size:cover; background-image: url(<?php echo $featured_src[0]; ?>);">
 										<span class="caption-container">
 											<h3><?php the_title(); ?></h3>
-												<?php the_excerpt(); ?>
+												<p><?php echo excerpt(30); ?></p>
 											<p><a href="<?php the_permalink(); ?>" class="button">Read more »</a></p>
 										</span>
 								</div>
@@ -50,8 +50,8 @@ Template Name: Homepage
 
 						<script type="text/javascript">
 						   $(window).load(function() {
-						       $('#featured').orbit({ 
-						       	fluid: '16x7'
+						       		$('#featured').orbit({ 
+						       		fluid: '16x6'
 						       });
 						   });
 						</script>
@@ -65,25 +65,28 @@ Template Name: Homepage
 							<div class="home-main twelve columns">
 						
 								<?php
-								 $postslist = get_posts('numberposts=5');
+								 $postslist = get_posts('numberposts=6'); /*-- Adjusts number of posts on front page */
 								 foreach ($postslist as $post) :
 								    setup_postdata($post);
 								 ?>
-									<div class="post-image four columns">
-										<a href="<?php the_permalink();?>">
-											<?php 
-												the_post_thumbnail('bones-thumb-300');
-										 	?>
+									<div class="post-image six columns">
+										<a href="<?php the_permalink();?>">  
+											<?php /*--Article Thumbnails--*/
+   												if (is_mobile()) {      
+   													the_post_thumbnail('bones-thumb-640');
+   												} else {
+   													the_post_thumbnail('wpf-featured');
+   												}
+											?>
 										</a>
+										<div class="post">
+											<h2>
+												<?php the_title(); ?>
+											</h2>
+												<?php echo content(45) ?>
+											<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
+										</div>
 									</div>
-									<div class="post seven columns">
-										<h2>
-											<?php the_title(); ?>
-										</h2>
-										<?php the_excerpt() ?>
-										<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
-									</div>
-									
 								<?php endforeach ?>
 								
 							</div>

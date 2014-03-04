@@ -33,11 +33,11 @@ add_filter('admin_footer_text', 'bones_custom_admin_footer');
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
+add_image_size( 'bones-thumb-640', 640, 150, true );
 add_image_size( 'wpf-featured', 639, 300, true );
-add_image_size ( 'wpf-home-featured', 970, 364, true );
-add_image_size( 'bones-thumb-600', 600, 150, false );
-add_image_size( 'bones-thumb-300', 500, 300, true );
-add_image_size( 'mobile-thumb', 400, 150, true );
+add_image_size( 'wpf-home-featured', 970, 250, true);
+add_image_size( 'bones-thumb-600', 600, 200, true );
+add_image_size( 'bones-thumb-300', 300, 150, true );
 
 /* 
 to add more sizes, simply copy a line from above 
@@ -105,12 +105,8 @@ function bones_register_sidebars() {
 
 function theme_styles()  
 { 
-    // Bring in Open Sans from Google fonts
-    wp_register_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300,800');
     // This is the compiled css file from SCSS
     wp_register_style( 'foundation-app', get_stylesheet_directory_uri() . '/style.css');
-    
-    wp_enqueue_style( 'open-sans' );
     wp_enqueue_style( 'foundation-app' );
 }
 
@@ -135,7 +131,7 @@ if( $test_url !== false ) { // test if the URL exists
 
     function load_local_jQuery() {  
         wp_deregister_script('jquery'); // initiate the function  
-        wp_register_script('jquery', bloginfo('get_template_directory_uri()').'/javascripts/jquery.min.js', __FILE__, false, '1.7.2', true); // register the local file  
+        wp_register_script('jquery', bloginfo('template_uri').'/javascripts/jquery.min.js', __FILE__, false, '1.7.2', true); // register the local file  
         wp_enqueue_script('jquery'); // enqueue the local file  
     }  
 
@@ -570,9 +566,29 @@ function save_homepage_meta($post_id) {
 }  
 add_action('save_post', 'save_homepage_meta');  
 
-function custom_excerpt_length( $length ) {
-    return 30;
+function excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt).'...';
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  } 
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 25 );
-
+ 
+function content($limit) {
+  $content = explode(' ', get_the_content(), $limit);
+  if (count($content)>=$limit) {
+    array_pop($content);
+    $content = implode(" ",$content).'...';
+  } else {
+    $content = implode(" ",$content);
+  } 
+  $content = preg_replace('/\[.+\]/','', $content);
+  $content = apply_filters('the_content', $content); 
+  $content = str_replace(']]>', ']]&gt;', $content);
+  return $content;
+}
 ?>
