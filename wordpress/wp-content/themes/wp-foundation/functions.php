@@ -33,9 +33,9 @@ add_filter('admin_footer_text', 'bones_custom_admin_footer');
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-640', 640, 150, true );
+add_image_size( 'wpf-thumb-640', 640, 150, true );
 add_image_size( 'wpf-featured', 639, 300, true );
-add_image_size( 'wpf-home-featured', 970, 250, true);
+add_image_size( 'wpf-home-featured', 1300, 300, true);
 add_image_size( 'bones-thumb-600', 600, 200, true );
 add_image_size( 'bones-thumb-300', 300, 150, true );
 

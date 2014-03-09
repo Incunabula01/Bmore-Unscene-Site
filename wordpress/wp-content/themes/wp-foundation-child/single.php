@@ -2,29 +2,35 @@
 			
 			<div id="content" class="clearfix">
 			
-				<div id="main" class="eight columns clearfix" role="main">
+				<div id="main" class="nine columns" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
-						<header>
+						<header class="page-header">
 						
 							<?php
    								if (is_mobile()) {
-   									the_post_thumbnail('bones-thumb-640');
-   								} else {
    									the_post_thumbnail('wpf-featured');
+   								} else {
+   									the_post_thumbnail('wpf-home-featured');
    								}
 							?>
 							
 							<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
 							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta">
+								<time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate>
+									<?php the_time('F jS, Y'); ?>
+								</time> 
+									<?php _e("by"); ?>
+									<?php the_author_posts_link(); ?>
+							</p>
 						
 						</header> <!-- end article header -->
 					
-						<section class="post_content clearfix" itemprop="articleBody">
+						<section class="post_content nine columns">
 							<?php the_content(); ?>
 							
 					
@@ -37,9 +43,7 @@
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
-					
+										
 					<?php endwhile; ?>			
 					
 					<?php else : ?>

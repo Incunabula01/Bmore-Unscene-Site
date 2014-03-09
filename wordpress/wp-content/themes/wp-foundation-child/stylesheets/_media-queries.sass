@@ -4,6 +4,7 @@ $box-border: 0.1em solid $white
 /* Phone to Tablet */
 
 @media only screen and (max-width: 767px)
+	/* header */
 	.row
 		width: auto
 	header
@@ -25,7 +26,7 @@ $box-border: 0.1em solid $white
 			h4.subhead 
 				display: none
 		
-			
+	/* Nav Button */	
 		.button
 			margin: 0.5em
 			border: $box-border
@@ -41,7 +42,7 @@ $box-border: 0.1em solid $white
 			box-shadow: none
 			border: 0.1em solid $white
 
-
+	/* Mobile Nav */
 		.mobile-nav-container
 			top: 68px
 			width: 52%
@@ -79,7 +80,6 @@ $box-border: 0.1em solid $white
 
 	.active #main
 		margin-right: -90%
-		overflow-x: hidden
 	#main
 		height: 100%
 		position: relative
@@ -93,8 +93,25 @@ $box-border: 0.1em solid $white
 				.button
 					width: 100%
 					text-align: center
+	/* Post Article styles */
+	.page-header
+		max-height: 400px
 
-
+	article
+		img
+			margin-top: 0.6em
+			padding: 0 1em
+			max-height: 300px
+		h1
+			padding-left: 0.3em
+			margin-bottom: 0.5em
+		p.meta
+			padding-left: 1em
+	/* Sidebar */
+	.panel
+		display: none
+		.widget
+			display: none
 
 /* Tablet to Screen */
 
@@ -106,7 +123,11 @@ $box-border: 0.1em solid $white
 				font-size: 1em
 				font-weight: 100
 				line-height: 1em
-      			
+	.page-header
+		min-height: 500px
+	article
+		img
+			max-height: 400px
 
 
 		
