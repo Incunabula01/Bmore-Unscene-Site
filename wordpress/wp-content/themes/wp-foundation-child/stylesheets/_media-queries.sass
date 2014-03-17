@@ -3,11 +3,10 @@ $box-border: 0.1em solid $white
 
 /* Phone to Tablet */
 
-@media only screen and (max-width: 767px)
-	/* header */
+@media screen and (max-width: 767px)
 	.row
 		width: auto
-	header
+	#top-header
 		min-width: 100%
 		max-height: 55px
 		#main-logo
@@ -26,7 +25,6 @@ $box-border: 0.1em solid $white
 			h4.subhead 
 				display: none
 		
-	/* Nav Button */	
 		.button
 			margin: 0.5em
 			border: $box-border
@@ -42,7 +40,6 @@ $box-border: 0.1em solid $white
 			box-shadow: none
 			border: 0.1em solid $white
 
-	/* Mobile Nav */
 		.mobile-nav-container
 			top: 68px
 			width: 52%
@@ -88,12 +85,16 @@ $box-border: 0.1em solid $white
 		padding: 0px
 		.home-main
 			.post-image
-				top: 0.8em
+				top: 0.4em
 			.post
+				h2
+					padding: 0 0.4em
+				p
+					padding: 0 1em
 				.button
 					width: 100%
 					text-align: center
-	/* Post Article styles */
+
 	.page-header
 		max-height: 400px
 
@@ -101,13 +102,13 @@ $box-border: 0.1em solid $white
 		img
 			margin-top: 0.6em
 			padding: 0 1em
-			max-height: 300px
+			max-height: 250px
 		h1
 			padding-left: 0.3em
 			margin-bottom: 0.5em
-		p.meta
-			padding-left: 1em
-	/* Sidebar */
+		p
+			padding: 0 1em
+
 	.panel
 		display: none
 		.widget
@@ -115,8 +116,8 @@ $box-border: 0.1em solid $white
 
 /* Tablet to Screen */
 
-@media (max-width:767) and (max-width: 1023)
-	header
+@media screen and (max-width:767) and (max-width: 1023)
+	#top-header
 		#main-logo
 			width: 200px
 			h1

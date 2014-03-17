@@ -33,9 +33,9 @@
       captionAnimation: 'none',       // fade, slideOpen, none
       captionAnimationSpeed: 600,     // if so how quickly should they animate in
       resetTimerOnClick: false,      // true resets the timer instead of pausing slideshow progress on manual navigation
-      bullets: false,           // true or false to activate the bullet navigation
+      bullets: true,           // true or false to activate the bullet navigation
       bulletThumbs: false,        // thumbnails for the bullets
-      bulletThumbLocation: '',      // location from this file where thumbs will be
+      bulletThumbLocation: '../uploads/2014/01',      // location from this file where thumbs will be
       afterSlideChange: $.noop,   // empty function
       afterLoadComplete: $.noop, //callback to execute after everything has been loaded
       fluid: true,

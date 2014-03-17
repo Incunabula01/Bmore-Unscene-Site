@@ -67,22 +67,17 @@ p {
 }
 
 /* line 1, stylesheets/_header.sass */
-.container {
-  width: 100%;
-}
-
-/* line 3, stylesheets/_header.sass */
 .row {
   overflow: hidden;
 }
 
-/* line 6, stylesheets/_header.sass */
-header {
+/* line 4, stylesheets/_header.sass */
+#top-header {
   background-color: #8b8b8b;
   color: #eeeeee;
 }
-/* line 9, stylesheets/_header.sass */
-header #main-logo {
+/* line 7, stylesheets/_header.sass */
+#top-header #main-logo {
   background: 10px 20px url("BmoreUnsceneLogo.png") no-repeat;
   min-height: 115px;
   width: 400px;
@@ -90,53 +85,53 @@ header #main-logo {
   margin: 0.5em 0 0 0.5em;
   padding: 2em 0 1em 7em;
 }
-/* line 16, stylesheets/_header.sass */
-header #main-logo h1 {
+/* line 14, stylesheets/_header.sass */
+#top-header #main-logo h1 {
   font-size: 2em;
   font-weight: 100;
   line-height: 0.15em;
 }
-/* line 20, stylesheets/_header.sass */
-header #main-logo h1 #logo {
+/* line 18, stylesheets/_header.sass */
+#top-header #main-logo h1 #logo {
   color: #eeeeee;
 }
-/* line 22, stylesheets/_header.sass */
-header #main-logo h4.subhead {
+/* line 20, stylesheets/_header.sass */
+#top-header #main-logo h4.subhead {
   padding: -8em 0 1em 6em;
   font-weight: 100;
 }
-/* line 27, stylesheets/_header.sass */
-header .nav-bar {
+/* line 25, stylesheets/_header.sass */
+#top-header .nav-bar {
   background: #8b8b8b;
 }
-/* line 29, stylesheets/_header.sass */
-header .nav-bar li {
+/* line 27, stylesheets/_header.sass */
+#top-header .nav-bar li {
   border-color: #8b8b8b;
   border-width: 0em;
   box-shadow: none;
 }
-/* line 33, stylesheets/_header.sass */
-header .nav-bar li a {
+/* line 31, stylesheets/_header.sass */
+#top-header .nav-bar li a {
   border-left: 0.1rem solid white;
   color: #8b8b8b;
 }
-/* line 36, stylesheets/_header.sass */
-header .nav-bar li a:first-child {
+/* line 34, stylesheets/_header.sass */
+#top-header .nav-bar li a:first-child {
   font-size: 1.2em;
   padding: 0 15px;
 }
-/* line 40, stylesheets/_header.sass */
-header .nav-bar li a:focus {
+/* line 38, stylesheets/_header.sass */
+#top-header .nav-bar li a:focus {
   color: #6d6d6d;
 }
-/* line 42, stylesheets/_header.sass */
-header .nav-bar .active {
+/* line 40, stylesheets/_header.sass */
+#top-header .nav-bar .active {
   background: #6d6d6d;
   border-color: #8b8b8b;
   color: #525252;
 }
-/* line 46, stylesheets/_header.sass */
-header .nav-bar .active:hover {
+/* line 44, stylesheets/_header.sass */
+#top-header .nav-bar .active:hover {
   background: #444444;
   color: #333333;
 }
@@ -260,104 +255,119 @@ header .nav-bar .active:hover {
 }
 
 /* Phone to Tablet */
-@media only screen and (max-width: 767px) {
-  /* header */
-  /* line 8, stylesheets/_media-queries.sass */
+@media screen and (max-width: 767px) {
+  /* line 7, stylesheets/_media-queries.sass */
   .row {
     width: auto;
   }
 
-  /* line 10, stylesheets/_media-queries.sass */
-  header {
+  /* line 9, stylesheets/_media-queries.sass */
+  #top-header {
     min-width: 100%;
     max-height: 55px;
   }
-  /* line 13, stylesheets/_media-queries.sass */
-  header #main-logo {
+  /* line 12, stylesheets/_media-queries.sass */
+  #top-header #main-logo {
     background: none;
     width: 100%;
     min-height: 50px;
     padding: 1.7em 3em 0 3em;
   }
-  /* line 18, stylesheets/_media-queries.sass */
-  header #main-logo h1 {
+  /* line 17, stylesheets/_media-queries.sass */
+  #top-header #main-logo h1 {
     text-align: center;
     font-weight: 300;
     font-size: 1.8em;
     letter-spacing: -0.02em;
     margin: 0px;
   }
-  /* line 24, stylesheets/_media-queries.sass */
-  header #main-logo h1 #logo {
+  /* line 23, stylesheets/_media-queries.sass */
+  #top-header #main-logo h1 #logo {
     color: #eeeeee;
   }
-  /* line 26, stylesheets/_media-queries.sass */
-  header #main-logo h4.subhead {
+  /* line 25, stylesheets/_media-queries.sass */
+  #top-header #main-logo h4.subhead {
     display: none;
   }
+  /* line 28, stylesheets/_media-queries.sass */
+  #top-header .button {
+    margin: 0.5em;
+    border: 0.1em solid white;
+    background-color: #8b8b8b;
+    color: white;
+    box-shadow: none;
+    background: none;
+  }
+  /* line 35, stylesheets/_media-queries.sass */
+  #top-header .button:hover {
+    border: 0.1em solid white;
+    background-color: #6d6d6d;
+    color: white;
+  }
+  /* line 39, stylesheets/_media-queries.sass */
+  #top-header .button:focus {
+    box-shadow: none;
+    border: 0.1em solid white;
+  }
+  /* line 43, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container {
+    top: 68px;
+    width: 52%;
+    background-color: #444444;
+    color: #f7f7f7;
+    box-shadow: -5px 0px 2px #333333 inset;
+    border-right: 2px solid #f7f7f7;
+    -webkit-transition: all 0.25s ease-in 0s;
+    height: 9000px;
+    color: #444444;
+  }
+  /* line 53, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container ul.tabs.vertical {
+    margin-bottom: 0px;
+  }
+  /* line 55, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container ul.tabs.vertical li {
+    border: 0px none;
+    box-shadow: -5px 0px 2px #333333 inset;
+  }
+  /* line 58, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container ul.tabs.vertical li a {
+    border-right: 0px;
+    font-size: 16px;
+    box-shadow: -5px 0px 2px #333333 inset;
+    color: #f7f7f7;
+    background: 0 no-repeat #6d6d6d;
+  }
+  /* line 64, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container ul.tabs.vertical li a:hover {
+    box-shadow: -5px 0px 2px #333333 inset;
+    background: #444444;
+    color: white;
+  }
+  /* line 68, stylesheets/_media-queries.sass */
+  #top-header .mobile-nav-container ul.tabs.vertical li.active {
+    background: #444444;
+  }
 
-  /* Nav Button */
-   * .button
-   * 	margin: 0.5em
-   * 	border: $box-border
-   * 	background-color: $base-color
-   * 	color: $white
-   * 	box-shadow: none
-   * 	background: none
-   * .button:hover
-   * 	border: $box-border
-   * 	background-color: $dark-grey
-   * 	color: $white
-   * .button:focus
-   * 	box-shadow: none
-   * 	border: 0.1em solid $white */
-  /* Mobile Nav */
-   * .mobile-nav-container
-   * 	top: 68px
-   * 	width: 52%
-   * 	background-color: $darker-grey
-   * 	color: $off-white
-   * 	box-shadow: $box-inset
-   * 	border-right: 2px solid $off-white
-   * 	-webkit-transition: all 0.25s ease-in 0s
-   * 	height: 9000px
-   * 	color: $darker-grey
-   * 	ul.tabs.vertical
-   * 		margin-bottom: 0px
-   * 		li
-   * 			border: 0px none 
-   * 			box-shadow: $box-inset
-   * 			a
-   * 				border-right: 0px
-   * 				font-size: 16px
-   * 				box-shadow: $box-inset
-   * 				color: $off-white
-   * 				background: 0 no-repeat $dark-grey
-   * 			a:hover
-   * 				box-shadow: $box-inset
-   * 				background: $darker-grey
-   * 				color: $white
-   * 		li.active
-   * 			background: $darker-grey */
-  /* line 74, stylesheets/_media-queries.sass */
+  /* line 71, stylesheets/_media-queries.sass */
   div.orbit-wrapper {
     display: none;
   }
-  /* line 76, stylesheets/_media-queries.sass */
+  /* line 73, stylesheets/_media-queries.sass */
   div.orbit-wrapper #featured {
     display: none;
   }
-  /* line 78, stylesheets/_media-queries.sass */
+  /* line 75, stylesheets/_media-queries.sass */
   div.orbit-wrapper #featured div.orbit-slide {
     display: none;
   }
 
-  /* line 81, stylesheets/_media-queries.sass */
+  /* line 78, stylesheets/_media-queries.sass */
   .active #main {
     margin-right: -90%;
   }
 
-  /* line 83, stylesheets/_media-queries.sass */
+  /* line 80, stylesheets/_media-queries.sass */
   #main {
     height: 100%;
     position: relative;
@@ -365,67 +375,73 @@ header .nav-bar .active:hover {
     -webkit-transition: all 0.25s ease-in 0s;
     padding: 0px;
   }
-  /* line 90, stylesheets/_media-queries.sass */
+  /* line 87, stylesheets/_media-queries.sass */
   #main .home-main .post-image {
-    top: 0.8em;
+    top: 0.4em;
   }
-  /* line 93, stylesheets/_media-queries.sass */
+  /* line 90, stylesheets/_media-queries.sass */
+  #main .home-main .post h2 {
+    padding: 0 0.4em;
+  }
+  /* line 92, stylesheets/_media-queries.sass */
+  #main .home-main .post p {
+    padding: 0 1em;
+  }
+  /* line 94, stylesheets/_media-queries.sass */
   #main .home-main .post .button {
     width: 100%;
     text-align: center;
   }
 
-  /* Post Article styles */
-  /* line 97, stylesheets/_media-queries.sass */
+  /* line 98, stylesheets/_media-queries.sass */
   .page-header {
     max-height: 400px;
   }
 
-  /* line 101, stylesheets/_media-queries.sass */
+  /* line 102, stylesheets/_media-queries.sass */
   article img {
     margin-top: 0.6em;
     padding: 0 1em;
-    max-height: 300px;
+    max-height: 250px;
   }
-  /* line 105, stylesheets/_media-queries.sass */
+  /* line 106, stylesheets/_media-queries.sass */
   article h1 {
     padding-left: 0.3em;
     margin-bottom: 0.5em;
   }
-  /* line 108, stylesheets/_media-queries.sass */
-  article p.meta {
-    padding-left: 1em;
+  /* line 109, stylesheets/_media-queries.sass */
+  article p {
+    padding: 0 1em;
   }
 
-  /* Sidebar */
-  /* line 111, stylesheets/_media-queries.sass */
+  /* line 112, stylesheets/_media-queries.sass */
   .panel {
     display: none;
   }
-  /* line 113, stylesheets/_media-queries.sass */
+  /* line 114, stylesheets/_media-queries.sass */
   .panel .widget {
     display: none;
   }
 }
 /* Tablet to Screen */
-@media (max-width: 767) and (max-width: 1023) {
-  /* line 120, stylesheets/_media-queries.sass */
-  header #main-logo {
+@media screen and (max-width: 767) and (max-width: 1023) {
+  /* line 121, stylesheets/_media-queries.sass */
+  #top-header #main-logo {
     width: 200px;
   }
-  /* line 122, stylesheets/_media-queries.sass */
-  header #main-logo h1 {
+  /* line 123, stylesheets/_media-queries.sass */
+  #top-header #main-logo h1 {
     font-size: 1em;
     font-weight: 100;
     line-height: 1em;
   }
 
-  /* line 126, stylesheets/_media-queries.sass */
+  /* line 127, stylesheets/_media-queries.sass */
   .page-header {
     min-height: 500px;
   }
 
-  /* line 129, stylesheets/_media-queries.sass */
+  /* line 130, stylesheets/_media-queries.sass */
   article img {
     max-height: 400px;
   }
