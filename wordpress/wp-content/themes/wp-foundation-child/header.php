@@ -123,12 +123,7 @@
 
 					<div class="show-for-small menu-action">
 				  	    <a href="#sidebar" id="mobile-nav-button" class="sidebar-button small button">
-							<svg xml:space="preserve" enable-background="inherit" viewBox="0 0 48 48" height="18px" width="18px" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1">
-								<line y2="8.907" x2="48" y1="8.907" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#FFFFFF" fill="none"/>
-								<line y2="24.173" x2="48" y1="24.173" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#FFFFFF" fill="none"/>
-								<line y2="39.439" x2="48" y1="39.439" x1="0" stroke-miterlimit="10" stroke-width="8" stroke="#FFFFFF" fill="none"/>
-								Menu
-							</svg>
+							<i class="icon-reorder" alt="Menu"></i> 
 						</a>
 					</div>
 

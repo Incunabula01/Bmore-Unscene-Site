@@ -1,6 +1,3 @@
-$box-inset: -5px 0px 2px #333333 inset
-$box-border: 0.1em solid $white
-
 /* Phone to Tablet */
 
 @media screen and (max-width: 767px)
@@ -27,31 +24,37 @@ $box-border: 0.1em solid $white
 			h4.subhead 
 				display: none
 		
+		.icon-reorder
+			font-size: 1.4em
+			font-color: $off-white
 		.button
 			margin: 0.5em
-			border: $box-border
+			font-size: 1em
+			border: none
 			background-color: $base-color
-			color: $white
+			color: $off-white
 			box-shadow: none
 			background: none
 		.button:hover
-			border: $box-border
+			border: none
+			color: $off-white
 			background-color: $dark-grey
 			color: $white
-		.button:focus
+		.button:active
+			border: none
+			color: $off-white
+			background-color: $darker-grey
 			box-shadow: none
-			border: 0.1em solid $white
 
 		.mobile-nav-container
 			top: 68px
 			width: 52%
-			background-color: $darker-grey
+			background-color: $base-color
 			color: $off-white
 			box-shadow: $box-inset
 			border-right: 2px solid $off-white
 			-webkit-transition: all 0.25s ease-in 0s
 			height: 9000px
-			color: $darker-grey
 			ul.tabs.vertical
 				margin-bottom: 0px
 				li
@@ -62,13 +65,15 @@ $box-border: 0.1em solid $white
 						font-size: 16px
 						box-shadow: $box-inset
 						color: $off-white
-						background: 0 no-repeat $dark-grey
+						background: 0 no-repeat $base-color
 					a:hover
 						box-shadow: $box-inset
+						background: #707070
+						color: darken($off-white, 25%)
+					a:active
 						background: $darker-grey
-						color: $white
-				li.active
-					background: $darker-grey
+
+
 
 	div.orbit-wrapper
 		display: none
@@ -118,7 +123,7 @@ $box-border: 0.1em solid $white
 
 /* Tablet to Screen */
 
-@media screen and (max-width:767) and (max-width: 1023)
+@media screen and (min-width:767) and (max-width: 1023)
 	#top-header
 		#main-logo
 			width: 200px

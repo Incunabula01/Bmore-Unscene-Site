@@ -11,6 +11,7 @@
 @import url("../wp-foundation/stylesheets/app.css")
 @import url("../wp-foundation/style.css")
 
+@import variables
 @import typography
 @import header
 @import footer
@@ -29,8 +30,9 @@
 .button:hover
 	background-color: $link-color
 
-.button:focus
+.button:active
 	box-shadow: 0px 0px 2px $white inset
+	background-color: darken($link-color, 20%)
 
 #content
 	height: 100%
