@@ -47,14 +47,13 @@
 			box-shadow: none
 
 		.mobile-nav-container
-			top: 68px
+			top: 5em
 			width: 52%
 			background-color: $base-color
 			color: $off-white
 			box-shadow: $box-inset
-			border-right: 2px solid $off-white
 			-webkit-transition: all 0.25s ease-in 0s
-			height: 9000px
+			height: 1200px
 			ul.tabs.vertical
 				margin-bottom: 0px
 				li
@@ -66,12 +65,15 @@
 						box-shadow: $box-inset
 						color: $off-white
 						background: 0 no-repeat $base-color
+						+Button-Transition
 					a:hover
 						box-shadow: $box-inset
 						background: #707070
 						color: darken($off-white, 25%)
 					a:active
 						background: $darker-grey
+					
+
 
 
 
@@ -83,7 +85,7 @@
 				display: none
 
 	.active #main
-		margin-right: -90%
+		margin-right: -80%
 	#main
 		height: 100%
 		position: relative
@@ -91,11 +93,14 @@
 		-webkit-transition: all 0.25s ease-in 0s
 		padding: 0px
 		.home-main
+			padding-left: 5px
 			.post-image
-				top: 0.4em
+				img
+					margin-top: 0.8em
+					border: none
 			.post
 				h2
-					padding: 0 0.4em
+					margin: 0.4em 0.3em
 				p
 					padding: 0 1em
 				.button
@@ -106,13 +111,13 @@
 		max-height: 400px
 
 	article
+		padding-left: 5px
 		img
-			margin-top: 0.6em
+			margin-top: 0.9em
 			padding: 0 1em
 			max-height: 250px
 		h1
-			padding-left: 0.3em
-			margin-bottom: 0.5em
+			margin: 0.4em 0.3em
 		p
 			padding: 0 1em
 

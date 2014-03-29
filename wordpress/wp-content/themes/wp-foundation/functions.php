@@ -233,9 +233,9 @@ add_filter('comment_class', 'add_class_comments');
 // Search Form
 function bones_wpsearch($form) {
     $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-    <label class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</label>
-    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search the Site..." />
-    <input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
+    <span class="screen-reader-text" for="s">' . __('Search for:', 'bonestheme') . '</span>
+    <input type="search" class="search-field" value="' . get_search_query() . '" name="s" id="s" placeholder="Search..." />
+    <input type="submit" id="search-submit" value="'. esc_attr__('Search') .'" />
     </form>';
     return $form;
 } // don't remove this bracket!
@@ -263,6 +263,18 @@ function custom_password_form() {
 	return $o;
 }
 
+add_filter('wp_nav_menu_items','add_search_box', 10, 2);
+function add_search_box($items, $args) {
+ 
+        ob_start();
+        get_search_form();
+        $searchform = ob_get_contents();
+        ob_end_clean();
+ 
+        $items .= '<li><label>' . $searchform . '</label></li>';
+ 
+    return $items;
+}
 /*********** update standard wp tag cloud widget so it looks better ************/
 
 // filter tag clould output so that it can be styled by CSS
