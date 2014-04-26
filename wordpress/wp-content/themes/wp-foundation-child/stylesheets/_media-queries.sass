@@ -5,7 +5,7 @@
 		width: auto
 	#top-header
 		min-width: 100%
-		max-height: 55px
+		max-height: 3.4em
 		#main-logo
 			background: none
 			width: 100%
@@ -46,37 +46,33 @@
 			background-color: $darker-grey
 			box-shadow: none
 
-		.mobile-nav-container
-			top: 5em
-			width: 52%
-			background-color: $base-color
-			color: $off-white
-			box-shadow: $box-inset
-			-webkit-transition: all 0.25s ease-in 0s
-			height: 1200px
-			ul.tabs.vertical
-				margin-bottom: 0px
-				li
-					border: 0px none 
+	.mobile-nav-container
+		top: 5em
+		width: 52%
+		background-color: $base-color
+		color: $off-white
+		box-shadow: $box-inset
+		-webkit-transition: all 0.25s ease-in 0s
+		height: 1200px
+		ul.tabs.vertical
+			margin-bottom: 0px
+			li
+				border: 0px none 
+				box-shadow: $box-inset
+				a
+					border-right: 0px
+					font-size: 16px
 					box-shadow: $box-inset
-					a
-						border-right: 0px
-						font-size: 16px
-						box-shadow: $box-inset
-						color: $off-white
-						background: 0 no-repeat $base-color
-						+Button-Transition
-					a:hover
-						box-shadow: $box-inset
-						background: #707070
-						color: darken($off-white, 25%)
-					a:active
-						background: $darker-grey
+					color: $off-white
+					background: 0 no-repeat $base-color
+					+Button-Transition
+				a:hover
+					box-shadow: $box-inset
+					background: #707070
+					color: darken($off-white, 25%)
+				a:active
+					background: $darker-grey
 					
-
-
-
-
 	div.orbit-wrapper
 		display: none
 		#featured

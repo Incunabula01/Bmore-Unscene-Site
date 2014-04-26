@@ -3501,6 +3501,19 @@ form.custom .custom.disabled {
  * http://www.opensource.org/licenses/mit-license.php
 */
 /* Container ---------------------- */
+#featured { 
+  background: url(spinner.gif) center center #f4f4f4 no-repeat; height: 300px; 
+}
+#featured img { 
+  display: none; 
+}
+
+#featured.orbit { 
+  background: none; 
+}
+#featured.orbit img { 
+  display: block; 
+}
 /* line 11, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.0.4/stylesheets/foundation/orbit.scss */
 div.orbit-wrapper {
   width: 1px;
