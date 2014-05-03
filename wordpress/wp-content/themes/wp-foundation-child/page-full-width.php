@@ -21,7 +21,34 @@ Template Name: Full Width Page
 						</header> <!-- end article header -->
 					
 						<section class="post_content">
-							<?php the_content(); ?>
+							<div class="home-main twelve columns">
+						
+								<?php
+								 $postslist = get_posts('category=event'); /*-- Adjusts number of posts on front page */
+								 foreach ($postslist as $post) :
+								    setup_postdata($post);
+								 ?>
+									<div class="post-image six columns">
+										<a href="<?php the_permalink();?>">  
+											<?php /*--Article Thumbnails--*/
+   												if (is_mobile()) {      
+   													the_post_thumbnail('bones-thumb-640');
+   												} else {
+   													the_post_thumbnail('wpf-featured');
+   												}
+											?>
+										</a>
+										<div class="post">
+											<h2>
+												<?php the_title(); ?>
+											</h2>
+												<?php echo content(45) ?>
+											<p><a href="<?php the_permalink(); ?>" class="button right">Read more »</a></p>
+										</div>
+									</div>
+								<?php endforeach ?>
+								
+							</div>
 					
 						</section> <!-- end article section -->
 						
@@ -44,7 +71,7 @@ Template Name: Full Width Page
 					    	<h1>Not Found</h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p>Sorry, but we seemed to have lost the post somewhere...</p>
 					    </section>
 					    <footer>
 					    </footer>

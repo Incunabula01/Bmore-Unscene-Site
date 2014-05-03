@@ -205,6 +205,75 @@ ul.nav-bar li label #search-submit {
   display: none;
 }
 
+/* line 1, stylesheets/_footer.sass */
+#site-footer {
+  height: 6em;
+  width: 100%;
+  background-color: #8b8b8b;
+  clear: both;
+}
+
+/* line 7, stylesheets/_footer.sass */
+.footer-links {
+  font-size: 100%;
+}
+/* line 9, stylesheets/_footer.sass */
+.footer-links ul.link-list {
+  margin: 0 17px;
+}
+/* line 11, stylesheets/_footer.sass */
+.footer-links ul.link-list label {
+  display: none;
+}
+/* line 13, stylesheets/_footer.sass */
+.footer-links ul.link-list a {
+  color: white;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+/* line 16, stylesheets/_footer.sass */
+.footer-links ul.link-list a:hover {
+  color: #c71100;
+}
+
+/* line 19, stylesheets/_footer.sass */
+ul.social-media-icons {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 17px;
+}
+/* line 24, stylesheets/_footer.sass */
+ul.social-media-icons a {
+  color: white;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+/* line 27, stylesheets/_footer.sass */
+ul.social-media-icons a:hover {
+  color: #c71100;
+}
+/* line 29, stylesheets/_footer.sass */
+ul.social-media-icons a:hover i {
+  display: inline-block;
+}
+
+/* line 33, stylesheets/_footer.sass */
+.attribution {
+  font-size: 0.5em;
+  color: #cfcfcf;
+  margin: 0 17px;
+  background: none;
+}
+/* line 38, stylesheets/_footer.sass */
+.attribution a {
+  color: #cfcfcf;
+}
+
 /* line 1, stylesheets/_homepage.sass */
 .caption-container {
   display: block;

@@ -24,7 +24,7 @@ require_once('library/shortcodes.php');
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	echo '<span id="footer-thankyou">Developed by <a href="http://320press.com" target="_blank">320press</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.';
+	echo '<span id="footer-thankyou">Developed by Joe Widener,Built using : <a href="http://320press.com" target="_blank">320press</a></span> and <a href="http://themble.com/bones" target="_blank">Bones</a>.';
 }
 
 // adding it to the admin area
@@ -263,14 +263,12 @@ function custom_password_form() {
 	return $o;
 }
 
-add_filter('wp_nav_menu_items','add_search_box', 10, 2);
-function add_search_box($items, $args) {
- 
-        ob_start();
-        get_search_form();
-        $searchform = ob_get_contents();
-        ob_end_clean();
- 
+add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
+function add_search_box_to_menu($items, $args) {
+            ob_start();
+            get_search_form();
+            $searchform = ob_get_contents();
+            ob_end_clean();
         $items .= '<li><label>' . $searchform . '</label></li>';
  
     return $items;

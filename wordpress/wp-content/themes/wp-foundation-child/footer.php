@@ -1,14 +1,36 @@
-			<footer role="contentinfo">
+			<footer id="site-footer" role="contentinfo">
 			
 					<div class="twelve columns">
 
 						<div class="row">
 
-							<nav class="ten columns clearfix">
-								<?php bones_footer_links(); ?>
+							<nav class="twelve columns clearfix">
+								<div class="eight columns">
+									<?php bones_footer_links(); ?>
+								</div>
+								<div class="four columns">
+									<ul class="social-media-icons">
+										<li>
+											<a href="#"><i class="icon-facebook-sign icon-2x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-twitter-sign icon-2x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-instagram-sign icon-2x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-tumblr-sign icon-2x"></i></a>
+										</li>
+									</ul>
+								</div>
 							</nav>
+									
 
-							<p class="attribution two columns"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
+							<p class="attribution">
+								Developed by Joe Widener using
+								<a href="http://320press.com">320press</a>
+							</p>
 
 						</div>
 

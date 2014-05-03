@@ -128,7 +128,6 @@ function bones_footer_links() {
     		'theme_location' => 'footer_links', /* where in the theme it's assigned */
     		'container_class' => 'footer-links clearfix', /* container class */
     		'fallback_cb' => 'bones_footer_links_fallback', /* menu fallback */
-    		'walker' => new footer_links_walker()
     	)
 	);
 }
