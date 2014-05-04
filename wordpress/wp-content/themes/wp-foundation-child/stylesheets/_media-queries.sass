@@ -59,6 +59,8 @@
 			li
 				border: 0px none 
 				box-shadow: $box-inset
+				+Remove-Box-Shadow
+				border-bottom: $box-border
 				a
 					border-right: 0px
 					font-size: 16px
@@ -68,10 +70,26 @@
 					+Button-Transition
 				a:hover
 					box-shadow: $box-inset
-					background: #707070
-					color: darken($off-white, 25%)
+					background: darken($base-color, 25%)
+					color: $white
 				a:active
 					background: $darker-grey
+				label
+					margin: 0 15px
+					height: 47px
+					+Remove-Box-Shadow
+					padding: 5px 0
+					.screen-reader-text
+						clip: rect(1px,1px,1px,1px)
+						position: absolute !important		
+					.search-field
+						background: $white url('images/search-icon.png') -38px 0 no-repeat
+						height: 38px
+						padding-left: 38px
+						width: 95%
+						margin-right: 15px
+					#search-submit
+						display: none
 					
 	div.orbit-wrapper
 		display: none
@@ -121,6 +139,44 @@
 		display: none
 		.widget
 			display: none
+
+	#site-footer
+		height: 12em
+
+	.footer-links
+		display: none
+
+	.mobile-footer
+		display: block
+		text-align: center
+		+Button-Transition
+		a
+			color: $white
+			line-height: -1em
+		a:hover
+			color: $link-color
+		h5
+			color: $white
+			margin: -0.5em 0 0.5em 0
+		h5:hover
+			color: $link-color
+
+
+	ul.social-media-icons
+		font-size: 50%
+		width: 100%
+		text-align: center
+		margin: 0.5em 0
+		li:first-child
+			margin-left: 0em
+		li
+			margin-left: 6em
+
+	p.attribution
+		text-align: center
+		width: 100%
+		margin-right: none
+		margin-top: 1em
 
 /* Tablet to Screen */
 

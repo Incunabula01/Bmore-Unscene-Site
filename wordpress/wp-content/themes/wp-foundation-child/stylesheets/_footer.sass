@@ -1,5 +1,5 @@
 #site-footer
-	height: 6em
+	height: 8em
 	width: 100%
 	background-color: $base-color
 	clear: both
@@ -7,7 +7,18 @@
 .footer-links
 	font-size: 100%
 	ul.link-list
-		margin: 0 17px
+		-moz-column-count: 2
+		-moz-column-gap: 2em
+		-moz-column-width: 5em
+		-webkit-column-count: 2
+		-webkit-column-gap: 2em
+		-webkit-column-width: 5em
+		column-width: 5em
+		column-count: 2
+		column-gap: 2em
+		margin: 1em 0.5em
+		display: block
+		vertical-align: top
 		label
 			display: none
 		a
@@ -17,23 +28,26 @@
 			color: $link-color
 
 ul.social-media-icons
-	display: block
 	list-style: none
 	text-decoration: none
-	margin: 0 17px
-	a
-		color: $white
-		+Button-Transition
-	a:hover
-		color: $link-color
-		i
-			display: inline-block
+	margin: 1em 2em
+	float: right
+	li
+		display: inline-block
+		margin-left: 1em
+		a
+			color: $white
+			+Button-Transition
+		a:hover
+			color: $link-color
 
+.mobile-footer
+	display: none
 
 .attribution
 	font-size: 0.5em
 	color: $off-white
-	margin: 0 17px
 	background: none
+	margin-right: 2em
 	a
 		color: $off-white

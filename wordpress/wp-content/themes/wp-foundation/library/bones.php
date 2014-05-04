@@ -135,7 +135,7 @@ function bones_footer_links() {
 // this is the fallback for header menu
 function bones_main_nav_fallback() { 
 	// not calling this in case of multiple level pages - hope to add dropdown menu as an enhancement
-	//wp_page_menu( 'show_home=Home&menu_class=menu' ); 
+	wp_page_menu( 'show_home=Home&menu_class=menu' ); 
 }
 
 // this is the fallback for footer menu

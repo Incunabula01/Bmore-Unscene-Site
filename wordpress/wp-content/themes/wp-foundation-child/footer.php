@@ -3,7 +3,9 @@
 					<div class="twelve columns">
 
 						<div class="row">
-
+							<div class="mobile-footer">
+								<a href="#top"><i class="icon-caret-up icon-3x"><h5>Return to top</h5></i></a>
+							</div>		
 							<nav class="twelve columns clearfix">
 								<div class="eight columns">
 									<?php bones_footer_links(); ?>
@@ -11,24 +13,23 @@
 								<div class="four columns">
 									<ul class="social-media-icons">
 										<li>
-											<a href="#"><i class="icon-facebook-sign icon-2x"></i></a>
+											<a href="#"><i class="icon-facebook-sign icon-3x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-twitter-sign icon-2x"></i></a>
+											<a href="#"><i class="icon-twitter icon-3x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-instagram-sign icon-2x"></i></a>
+											<a href="#"><i class="icon-instagram icon-3x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-tumblr-sign icon-2x"></i></a>
+											<a href="#"><i class="icon-tumblr icon-3x"></i></a>
 										</li>
 									</ul>
 								</div>
 							</nav>
-									
-
+							
 							<p class="attribution">
-								Developed by Joe Widener using
+								Designed by Joe Widener using
 								<a href="http://320press.com">320press</a>
 							</p>
 
