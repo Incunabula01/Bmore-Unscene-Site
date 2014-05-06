@@ -7,8 +7,17 @@
 								<a href="#top"><i class="icon-caret-up icon-3x"><h5>Return to top</h5></i></a>
 							</div>		
 							<nav class="twelve columns clearfix">
-								<div class="eight columns">
-									<?php bones_footer_links(); ?>
+								<div id="footer1" class="sidebar four columns" role="complementary">
+									<div class="footer-widget1">				
+										<?php if (!function_exists('dynamic_sidebar') || ! dynamic_sidebar( 'footer1' )): ?>
+										<?php endif; ?>
+									</div>
+								</div>
+								<div id="footer2" class="sidebar four columns" role="complementary">
+									<div class="footer-widget2">				
+										<?php if (!function_exists('dynamic_sidebar') || ! dynamic_sidebar( 'footer2' )): ?>
+										<?php endif; ?>
+									</div>
 								</div>
 								<div class="four columns">
 									<ul class="social-media-icons">

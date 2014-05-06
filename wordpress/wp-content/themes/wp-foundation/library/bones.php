@@ -77,8 +77,8 @@ function bones_theme_support() {
 	add_theme_support( 'menus' );            // wp menus
 	register_nav_menus(                      // wp3+ menus
 		array( 
-			'main_nav' => 'The Main Menu',   // main nav in header
-			'footer_links' => 'Footer Links' // secondary nav in footer
+			'main_nav' => 'The Main Menu'   // main nav in header
+			//'footer_links' => 'Footer Links' // secondary nav in footer
 		)
 	);	
 }
@@ -118,19 +118,19 @@ function bones_mobile_nav() {
     	)
     );
 }
-
+/*
 function bones_footer_links() { 
 	// display the wp3 menu if available
     wp_nav_menu(
     	array(
-    		'menu' => 'footer_links', /* menu name */
+    		'menu' => 'footer_links', 
     		'menu_class' => 'link-list',
-    		'theme_location' => 'footer_links', /* where in the theme it's assigned */
-    		'container_class' => 'footer-links clearfix', /* container class */
-    		'fallback_cb' => 'bones_footer_links_fallback', /* menu fallback */
+    		'theme_location' => 'footer_links', 
+    		'container_class' => 'footer-links clearfix', 
+    		'fallback_cb' => 'bones_footer_links_fallback', 
     	)
 	);
-}
+}*/
  
 // this is the fallback for header menu
 function bones_main_nav_fallback() { 
@@ -139,9 +139,9 @@ function bones_main_nav_fallback() {
 }
 
 // this is the fallback for footer menu
-function bones_footer_links_fallback() { 
-	/* you can put a default here if you like */ 
-}
+/*function bones_footer_links_fallback() { 
+	 you can put a default here if you like  
+}*/
 
 
 /****************** PLUGINS & EXTRA FEATURES **************************/
