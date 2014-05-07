@@ -113,7 +113,7 @@
 				
 	</head>
 	
-	<body <?php body_class(); ?> id="top">
+	<body <?php body_class(); ?>>
 
 		<div class="row container">
 			<div class="twelve columns">

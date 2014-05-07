@@ -4,6 +4,26 @@
 	background-color: $base-color
 	clear: both
 
+.footer-links
+	font-size: 100%
+	ul.link-list
+		margin: 1em 0.5em
+		display: block
+		vertical-align: top
+		li
+			border-right: $box-border
+			padding: 0 1em
+			margin-left: 0em
+		li:last-child
+			border-right: 0em
+		label
+			display: none
+		a
+			color: darken($white, 25%)
+			+Button-Transition
+		a:hover
+			color: $white
+
 ul.social-media-icons
 	list-style: none
 	text-decoration: none
@@ -13,10 +33,10 @@ ul.social-media-icons
 		display: inline-block
 		margin-left: 1em
 		a
-			color: $white
+			color: darken($white, 35%)
 			+Button-Transition
 		a:hover
-			color: $link-color
+			color: $white
 
 .mobile-footer
 	display: none
