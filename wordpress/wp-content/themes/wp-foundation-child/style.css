@@ -625,7 +625,15 @@ ul.social-media-icons li a:hover {
     max-height: 400px;
   }
 }
-/* line 24, stylesheets/style.sass */
+/* line 1, stylesheets/_404.sass */
+.error-image {
+  height: 30em;
+  width: 100%;
+  background: #f0f0f0 url("images/Boh-Error-Image.png") 50% 2em no-repeat;
+  display: block;
+}
+
+/* line 25, stylesheets/style.sass */
 .button {
   background: #8b8b8b;
   border: 0.1em solid #cfcfcf;
@@ -634,28 +642,28 @@ ul.social-media-icons li a:hover {
   box-shadow: none;
 }
 
-/* line 31, stylesheets/style.sass */
+/* line 32, stylesheets/style.sass */
 .button:hover {
   background-color: #c71100;
 }
 
-/* line 34, stylesheets/style.sass */
+/* line 35, stylesheets/style.sass */
 .button:active {
   box-shadow: 0px 0px 2px white inset;
   background-color: #610800;
 }
 
-/* line 38, stylesheets/style.sass */
+/* line 39, stylesheets/style.sass */
 #content {
   height: 100%;
 }
 
-/* line 41, stylesheets/style.sass */
+/* line 42, stylesheets/style.sass */
 .columns {
   padding: 0 4px;
 }
 
-/* line 44, stylesheets/style.sass */
+/* line 45, stylesheets/style.sass */
 .container {
   width: 1000px;
 }
