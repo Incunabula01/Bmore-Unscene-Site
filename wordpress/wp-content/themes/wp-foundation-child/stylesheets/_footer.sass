@@ -1,5 +1,5 @@
 #site-footer
-	height: 8em
+	height: 10em
 	width: 100%
 	background-color: $base-color
 	clear: both
@@ -19,7 +19,7 @@
 		label
 			display: none
 		a
-			color: darken($white, 25%)
+			color: $anchor-color
 			+Button-Transition
 		a:hover
 			color: $white
@@ -33,18 +33,20 @@ ul.social-media-icons
 		display: inline-block
 		margin-left: 1em
 		a
-			color: darken($white, 35%)
+			color: $anchor-color
 			+Button-Transition
 		a:hover
 			color: $white
 
 .mobile-footer
 	display: none
+	.mobile-social-media-icons
+		display: none
 
 .attribution
 	font-size: 0.5em
 	color: $off-white
 	background: none
-	margin-right: 2em
+	margin-right: 4em
 	a
 		color: $off-white

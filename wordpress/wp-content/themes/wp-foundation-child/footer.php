@@ -5,6 +5,21 @@
 						<div class="row">
 							<div class="mobile-footer">
 								<a href="#top"><i class="icon-caret-up icon-3x"><h5>Return to top</h5></i></a>
+								<ul class="mobile-social-media-icons">
+										<li>
+											<a href="#"><i class="icon-facebook-sign icon-4x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-twitter icon-4x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-instagram icon-4x"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-tumblr icon-4x"></i></a>
+										</li>
+									</ul>
+									<br/>
 							</div>		
 							<nav class="twelve columns clearfix">
 								<div class="eight columns">
@@ -13,16 +28,16 @@
 								<div class="four columns">
 									<ul class="social-media-icons">
 										<li>
-											<a href="#"><i class="icon-facebook-sign icon-3x"></i></a>
+											<a href="#"><i class="icon-facebook-sign icon-2x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-twitter icon-3x"></i></a>
+											<a href="#"><i class="icon-twitter icon-2x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-instagram icon-3x"></i></a>
+											<a href="#"><i class="icon-instagram icon-2x"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="icon-tumblr icon-3x"></i></a>
+											<a href="#"><i class="icon-tumblr icon-2x"></i></a>
 										</li>
 									</ul>
 								</div>
