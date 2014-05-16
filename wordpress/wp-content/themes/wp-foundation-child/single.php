@@ -41,7 +41,9 @@
 							<?php the_tags('<p class="tags"><span class="tags-title">Tags:</span> ', ' ', '</p>'); ?>
 							
 						</footer> <!-- end article footer -->
-					
+						
+						<?php comments_template('bones_comments'); ?>
+
 					</article> <!-- end article -->
 										
 					<?php endwhile; ?>			
