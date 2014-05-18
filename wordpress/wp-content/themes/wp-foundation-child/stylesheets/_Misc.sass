@@ -29,16 +29,35 @@
 #comments
 	padding-left: 0.5em
 
+.respond-form
+	padding: 0 1em
+
 div.panel.callout
 	padding-left: 1em
 	background: $white
 	border-shadow: $dark-grey
+	border-color: lighten($dark-grey, 25%)
+	a
+		color: $base-color
+	a:hover
+		color: $anchor-color
+	.button
+		background: $base-color
+		+Button-Transition
+		color: $off-white
+	.button:hover
+		background: $dark-grey
+		color: $white
+	.button:active
+		background: $link-color
 
 h4
 	color: $base-color
 
 ol.commentlist
 	color: $base-color
+	time
+		color: $base-color
 
 p
 	color: lighten($base-color, 10%)
