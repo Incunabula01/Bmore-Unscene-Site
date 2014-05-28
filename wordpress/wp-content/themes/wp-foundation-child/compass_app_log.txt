@@ -1410,6 +1410,7 @@ Load paths:
 2014-05-10 15:18:40 overwrite style.css 
 2014-05-10 15:19:13 overwrite style.css 
 2014-05-10 15:19:35 overwrite style.css 
+<<<<<<< HEAD
 2014-05-10 15:32:16 overwrite style.css 
 2014-05-10 15:32:36 overwrite style.css 
 2014-05-10 15:33:01 overwrite style.css 
@@ -1559,3 +1560,22 @@ Load paths:
 2014-05-18 16:13:25 overwrite style.css 
 2014-05-18 16:13:38 overwrite style.css 
 2014-05-18 16:14:30 overwrite style.css 
+=======
+>>>>>>> parent of 48d2683... Updated Mobile Nav
+2014-05-22 20:26:39     error stylesheets/style.sass (Line 67 of stylesheets/_Misc.sass: Invalid mixin "======".)
+2014-05-22 20:26:40 overwrite style.css 
+2014-05-22 20:26:40     error stylesheets/style.sass (Line 22 of stylesheets/_variables.sass: Invalid mixin "======".)
+2014-05-22 20:26:40 overwrite style.css 
+2014-05-22 20:26:41     error stylesheets/style.sass (Line 22 of stylesheets/_variables.sass: Invalid mixin "======".)
+2014-05-22 20:26:41 identical style.css 
+2014-05-22 20:26:41     error stylesheets/style.sass (Line 22 of stylesheets/_variables.sass: Invalid mixin "======".)
+2014-05-22 20:26:42 identical style.css 
+2014-05-22 20:26:42     error stylesheets/style.sass (Line 22 of stylesheets/_variables.sass: Invalid mixin "======".)
+2014-05-22 20:26:42 identical style.css 
+2014-05-22 20:41:43     error stylesheets/style.sass (Line 67 of stylesheets/_Misc.sass: Invalid mixin "======".)
+2014-05-22 20:41:43 overwrite style.css 
+2014-05-22 20:42:15     error stylesheets/style.sass (Line 25 of stylesheets/_Misc.sass: Invalid CSS after "": expected selector_comma_sequence, was "<<<<<<< HEAD")
+2014-05-22 20:42:15 overwrite style.css 
+2014-05-22 20:42:33     error stylesheets/style.sass (Line 56 of stylesheets/_media-queries.sass: The line was indented 2 levels deeper than the previous line.)
+2014-05-22 20:42:34 overwrite style.css 
+2014-05-22 20:43:32 overwrite style.css 

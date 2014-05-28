@@ -28,8 +28,6 @@
 					color: $header-text
 			h4.subhead 
 				display: none
-		.active
-			border-color: $background
 		
 		.icon-reorder
 			font-size: 1.4em
@@ -57,6 +55,9 @@
 		top: 3.5em
 		width: 55%
 		background-color: $mobile-nav
+		top: 5em
+		width: 52%
+		background-color: $base-color
 		color: $off-white
 		-webkit-transition: all 0.25s ease-in 0s
 		height: 100%
@@ -67,6 +68,8 @@
 				border: $box-border
 				+Remove-Box-Shadow
 				background: $mobile-nav
+				border: 0px none 
+				box-shadow: $box-inset
 				a
 					border-right: 0px
 					font-size: 16px
@@ -77,24 +80,14 @@
 				a:hover
 					background: lighten($base-color, 10%)
 					color: $white
+					background: 0 no-repeat $base-color
+					+Button-Transition
+				a:hover
+					box-shadow: $box-inset
+					background: #707070
+					color: darken($off-white, 25%)
 				a:active
-					background: $mobile-nav
-				label
-					margin: 5px 15px
-					height: 44px
-					border-top: $box-border
-					.screen-reader-text
-						clip: rect(1px,1px,1px,1px)
-						position: absolute !important
-					.search-field
-						background: $white url('images/search-icon.png') -38px 0 no-repeat
-						height: 40px
-						padding-left: 36px
-						position: relative
-						border: none
-						cursor: pointer
-					#search-submit
-						display: none
+					background: $darker-grey
 					
 	div.orbit-wrapper
 		display: none
