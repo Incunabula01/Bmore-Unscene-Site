@@ -1,5 +1,7 @@
-		<div class="twelve columns">
 			<footer id="site-footer" role="contentinfo">
+			
+					<div class="twelve columns">
+
 						<div class="row">
 							<div class="mobile-footer">
 								<a href="#top"><i class="icon-caret-up icon-3x"><h5>Return to top</h5></i></a>
@@ -47,11 +49,12 @@
 							</p>
 
 						</div>
+
+					</div>
 					
 			</footer> <!-- end footer -->
-		</div>
 		
-	</div> <!-- end #container -->
+		</div> <!-- end #container -->
 		
 		<!--[if lt IE 7 ]>
   			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

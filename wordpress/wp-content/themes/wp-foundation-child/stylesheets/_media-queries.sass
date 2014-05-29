@@ -9,8 +9,7 @@
 
 	#top-header
 		min-width: 100%
-		max-height: 3.5em
-		z-index: 1004
+		max-height: 3.4em
 		#main-logo
 			background: none
 			width: 100%
@@ -52,32 +51,31 @@
 			box-shadow: none
 
 	.mobile-nav-container
-		top: 3.5em
-		width: 55%
+		top: 4em
+		width: 52%
 		background-color: $mobile-nav
 		top: 5em
 		width: 52%
 		background-color: $base-color
 		color: $off-white
+		box-shadow: $box-inset
 		-webkit-transition: all 0.25s ease-in 0s
-		height: 100%
-		+Remove-Box-Shadow
+		height: 1200px
 		ul.tabs.vertical
 			margin-bottom: 0px
 			li
 				border: $box-border
-				+Remove-Box-Shadow
-				background: $mobile-nav
-				border: 0px none 
 				box-shadow: $box-inset
+				+Remove-Box-Shadow
 				a
 					border-right: 0px
 					font-size: 16px
+					box-shadow: $box-inset
 					color: $off-white
 					background: 0 no-repeat $mobile-nav
-					+Remove-Box-Shadow
 					+Button-Transition
 				a:hover
+					box-shadow: $box-inset
 					background: lighten($base-color, 10%)
 					color: $white
 					background: 0 no-repeat $base-color
@@ -96,17 +94,11 @@
 			div.orbit-slide
 				display: none
 
-	#content
-		background: $mobile-nav
-		margin: 0 4px
-
 	.active #main
-		margin-right: -95%
-		border-left: $box-shadow
+		margin-right: -80%
 	#main
 		height: 100%
 		position: relative
-		background: $background
 		z-index: 1002
 		-webkit-transition: all 0.25s ease-in 0s
 		padding: 0px
@@ -119,10 +111,8 @@
 			.post
 				h2
 					margin: 0.4em 0.3em
-					overflow: hidden
 				p
 					padding: 0 1em
-					overflow: hidden
 				.button
 					width: 100%
 					text-align: center
@@ -131,10 +121,11 @@
 		max-height: 400px
 
 	article
+		padding-left: 5px
 		img
 			margin-top: 0.9em
 			padding: 0 1em
-			max-height: 200px
+			max-height: 250px
 		h1
 			margin: 0.4em 0.3em
 		p
@@ -148,9 +139,6 @@
 	.error-image
 		background: none
 		padding-top: 0em
-
-	#site-footer
-		height: 100%
 
 	.mobile-footer
 		display: block
@@ -174,10 +162,7 @@
 				a:hover
 					color: $white
 	p.attribution
-		display: block
-		text-align: center
-		font-size: 100%
-		margin-right: 0em
+		display: none
 
 	#site-footer
 		display:none
