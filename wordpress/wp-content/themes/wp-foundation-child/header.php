@@ -24,7 +24,7 @@
 		<!-- For Nokia -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon.png">
 		<!-- For everything else -->
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 				
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
